@@ -1,6 +1,13 @@
 <script>
 	// Import GlassBox component
 	import GlassBox from '$lib/components/GlassBox.svelte';
+	import { getAbout, getPageIntros } from '$lib/stores/portfolio';
+
+	// Get about data
+	const aboutData = getAbout();
+
+	// Get page intro from portfolio data
+	const pageIntros = getPageIntros();
 </script>
 
 <svelte:head>
@@ -12,47 +19,32 @@
 	<div class="container">
 		<h1>About Me</h1>
 
+		<p class="intro">
+			{pageIntros.about}
+		</p>
+
 		<GlassBox>
 			<section class="about-section">
-				<p>
-					I am a former Hewlett Packard Enterprises professional currently pursuing a Master of Science in
-					Engineering Management at George Washington University. Based in Alexandria, VA, I'm passionate
-					about leveraging my technical background and management education to excel in Project Management roles.
-				</p>
-
-				<p>
-					With experience in the technology sector and a strong educational foundation in engineering,
-					I am positioned to bridge the gap between technical teams and business objectives.
-				</p>
+				<p>{aboutData.intro}</p>
+				<p>{aboutData.background}</p>
 			</section>
 
 			<section class="about-section">
 				<h2>Professional Background</h2>
-				<p>
-					My journey began in engineering, where I developed a solid technical foundation. Working at
-					Hewlett Packard Enterprises provided me with valuable insights into technology implementation
-					and management. This experience has shaped my understanding of how technical projects can be
-					effectively managed to achieve business goals.
-				</p>
+				<p>{aboutData.professionalBackground}</p>
 			</section>
 
 			<section class="about-section">
 				<h2>Career Objectives</h2>
-				<p>
-					I am seeking opportunities in Project Management where I can apply my technical expertise and
-					management education to lead teams and deliver successful projects. My goal is to work in
-					an environment where I can contribute to organizational success through effective project
-					leadership and technical innovation.
-				</p>
+				<p>{aboutData.careerObjectives}</p>
 			</section>
 
 			<section class="interests">
 				<h2>Professional Interests</h2>
 				<ul>
-					<li><strong>Agile Project Management:</strong> Implementing adaptive planning and continuous improvement in technical projects</li>
-					<li><strong>Cross-functional Team Leadership:</strong> Developing strategies to lead diverse teams effectively</li>
-					<li><strong>Technology Implementation:</strong> Managing the integration of new technologies in enterprise environments</li>
-					<li><strong>Process Optimization:</strong> Analyzing and improving workflows for enhanced efficiency</li>
+					{#each aboutData.interests as interest}
+						<li>{@html interest}</li>
+					{/each}
 				</ul>
 			</section>
 		</GlassBox>
@@ -77,6 +69,12 @@
 
 	h1 {
 		font-size: 2.2rem;
+		margin-bottom: 1rem;
+	}
+
+	.intro {
+		font-size: 1.1rem;
+		line-height: 1.6;
 		margin-bottom: 2rem;
 	}
 

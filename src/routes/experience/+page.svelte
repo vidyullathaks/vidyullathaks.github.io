@@ -1,5 +1,23 @@
 <script>
 	import GlassBox from '$lib/components/GlassBox.svelte';
+	import { getExperience, getSkills, getPageIntros } from '$lib/stores/portfolio';
+
+	// Get experience data
+	const experienceData = getExperience();
+
+	// Get skills data for professional skills section
+	const { technical, management } = getSkills();
+
+	// Select a subset of skills to display in professional skills section
+	const professionalSkills = [
+		technical.find(skill => skill.name === "Technical Documentation"),
+		technical.find(skill => skill.name === "Quality Assurance"),
+		management.find(skill => skill.name === "Project Coordination"),
+		management.find(skill => skill.name === "Process Improvement")
+	];
+
+	// Get page intro from portfolio data
+	const pageIntros = getPageIntros();
 </script>
 
 <svelte:head>
@@ -11,83 +29,51 @@
 	<div class="container">
 		<h1>Professional Experience</h1>
 
+		<p class="intro">
+			{pageIntros.experience}
+		</p>
+
 		<section class="experience-section">
-			<GlassBox padding="1.5rem">
-				<div class="experience-header">
-					<h2>Engineering Associate</h2>
-					<div class="company-logo">HPE</div>
-				</div>
-				<p class="company">Hewlett Packard Enterprise</p>
-				<p class="location">Bangalore, India</p>
-				<p class="period">2020 - 2023</p>
+			{#each experienceData as experience}
+				<GlassBox padding="1.5rem">
+					<div class="experience-header">
+						<h2>{experience.position}</h2>
+						<div class="company-logo">{experience.logo}</div>
+					</div>
+					<p class="company">{experience.company}</p>
+					<p class="location">{experience.location}</p>
+					<p class="period">{experience.period}</p>
 
-				<div class="details">
-					<h3>Responsibilities</h3>
-					<ul>
-						<li>Collaborated with cross-functional teams to implement technical solutions for enterprise clients</li>
-						<li>Participated in project planning and execution, ensuring timely delivery of deliverables</li>
-						<li>Helped optimize workflows and improve operational efficiency through process improvement initiatives</li>
-						<li>Documented technical specifications and created user guides for implemented solutions</li>
-						<li>Conducted quality assurance testing to ensure solution reliability</li>
-						<li>Provided technical support and troubleshooting for enterprise systems</li>
-					</ul>
+					<div class="details">
+						<h3>Responsibilities</h3>
+						<ul>
+							{#each experience.responsibilities as responsibility}
+								<li>{responsibility}</li>
+							{/each}
+						</ul>
 
-					<h3>Key Achievements</h3>
-					<ul>
-						<li>Successfully contributed to the implementation of 5+ major technical projects</li>
-						<li>Recognized for identifying process improvements that reduced workflow inefficiencies by 15%</li>
-						<li>Participated in knowledge-sharing initiatives to enhance team capabilities</li>
-						<li>Developed documentation templates that were adopted across the department</li>
-					</ul>
-				</div>
-			</GlassBox>
-
-			<GlassBox padding="1.5rem">
-				<div class="experience-header">
-					<h2>Engineering Intern</h2>
-					<div class="company-logo">Intern</div>
-				</div>
-				<p class="company">Technology Research Institute</p>
-				<p class="location">Bangalore, India</p>
-				<p class="period">Summer 2019</p>
-
-				<div class="details">
-					<h3>Responsibilities</h3>
-					<ul>
-						<li>Assisted senior engineers with research and development projects</li>
-						<li>Collected and analyzed data for ongoing technical initiatives</li>
-						<li>Participated in team meetings and contributed to project discussions</li>
-						<li>Documented research findings and technical processes</li>
-					</ul>
-
-					<h3>Key Achievements</h3>
-					<ul>
-						<li>Developed a data visualization tool that improved data interpretation efficiency</li>
-						<li>Received positive feedback for attention to detail and problem-solving abilities</li>
-					</ul>
-				</div>
-			</GlassBox>
+						<h3>Key Achievements</h3>
+						<ul>
+							{#each experience.achievements as achievement}
+								<li>{achievement}</li>
+							{/each}
+						</ul>
+					</div>
+				</GlassBox>
+			{/each}
 		</section>
 
 		<section class="skills-section">
 			<h2>Professional Skills Developed</h2>
 			<div class="skills-grid">
-				<GlassBox padding="1rem" opacity={0.3} className="skill-item">
-					<h3>Technical Coordination</h3>
-					<p>Bridging the gap between technical teams and project requirements</p>
-				</GlassBox>
-				<GlassBox padding="1rem" opacity={0.3} className="skill-item">
-					<h3>Documentation</h3>
-					<p>Creating comprehensive technical and process documentation</p>
-				</GlassBox>
-				<GlassBox padding="1rem" opacity={0.3} className="skill-item">
-					<h3>Quality Assurance</h3>
-					<p>Ensuring solution reliability through systematic testing</p>
-				</GlassBox>
-				<GlassBox padding="1rem" opacity={0.3} className="skill-item">
-					<h3>Process Improvement</h3>
-					<p>Identifying and implementing workflow optimizations</p>
-				</GlassBox>
+				{#each professionalSkills as skill}
+					{#if skill}
+						<GlassBox padding="1rem" opacity={0.3} className="skill-item">
+							<h3>{skill.name}</h3>
+							<p>{skill.description}</p>
+						</GlassBox>
+					{/if}
+				{/each}
 			</div>
 		</section>
 
@@ -111,6 +97,12 @@
 
 	h1 {
 		font-size: 2.2rem;
+		margin-bottom: 1rem;
+	}
+
+	.intro {
+		font-size: 1.1rem;
+		line-height: 1.6;
 		margin-bottom: 2rem;
 	}
 

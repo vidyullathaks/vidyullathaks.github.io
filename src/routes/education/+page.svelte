@@ -1,5 +1,13 @@
 <script>
 	import GlassBox from '$lib/components/GlassBox.svelte';
+	import { getEducation, getProfessionalDevelopment, getPageIntros } from '$lib/stores/portfolio';
+
+	// Get education data
+	const educationData = getEducation();
+	const professionalDevelopment = getProfessionalDevelopment();
+
+	// Get page intro from portfolio data
+	const pageIntros = getPageIntros();
 </script>
 
 <svelte:head>
@@ -11,58 +19,35 @@
 	<div class="container">
 		<h1>Education</h1>
 
+		<p class="intro">
+			{pageIntros.education}
+		</p>
+
 		<section class="education-section">
-			<GlassBox padding="1.5rem">
-				<h2>MS in Engineering Management</h2>
-				<p class="institution">George Washington University</p>
-				<p class="location">Washington, DC</p>
-				<p class="period">Expected Graduation: 2024</p>
+			{#each educationData as education}
+				<GlassBox padding="1.5rem">
+					<h2>{education.degree}</h2>
+					<p class="institution">{education.institution}</p>
+					<p class="location">{education.location}</p>
+					<p class="period">{education.period}</p>
 
-				<div class="details">
-					<h3>Key Coursework</h3>
-					<ul>
-						<li>Project Management for Engineers</li>
-						<li>Engineering Economics and Decision Making</li>
-						<li>Systems Engineering</li>
-						<li>Technology Innovation and Management</li>
-						<li>Strategic Management of Technology</li>
-					</ul>
+					<div class="details">
+						<h3>Key Coursework</h3>
+						<ul>
+							{#each education.coursework as course}
+								<li>{course}</li>
+							{/each}
+						</ul>
 
-					<h3>Skills Developed</h3>
-					<ul>
-						<li>Project planning and execution</li>
-						<li>Risk assessment and management</li>
-						<li>Resource allocation strategies</li>
-						<li>Technical team leadership</li>
-						<li>Strategic decision-making</li>
-					</ul>
-				</div>
-			</GlassBox>
-
-			<GlassBox padding="1.5rem">
-				<h2>Bachelor of Engineering</h2>
-				<p class="institution">Dayananda Sagar College of Engineering</p>
-				<p class="location">Bangalore, India</p>
-				<p class="period">Graduated: 2020</p>
-
-				<div class="details">
-					<h3>Key Coursework</h3>
-					<ul>
-						<li>Engineering Fundamentals</li>
-						<li>Technical Design and Analysis</li>
-						<li>Computer Systems and Programming</li>
-						<li>Introduction to Project Management</li>
-					</ul>
-
-					<h3>Skills Developed</h3>
-					<ul>
-						<li>Technical problem-solving</li>
-						<li>Engineering design principles</li>
-						<li>Analytical thinking</li>
-						<li>Technical documentation</li>
-					</ul>
-				</div>
-			</GlassBox>
+						<h3>Skills Developed</h3>
+						<ul>
+							{#each education.skills as skill}
+								<li>{skill}</li>
+							{/each}
+						</ul>
+					</div>
+				</GlassBox>
+			{/each}
 		</section>
 
 		<section class="certifications">
@@ -71,9 +56,9 @@
 				<p>In addition to formal education, I regularly pursue professional development opportunities to stay current with industry trends and enhance my skill set:</p>
 
 				<ul>
-					<li>Continuing education in project management methodologies</li>
-					<li>Professional workshops on leadership and team management</li>
-					<li>Technical seminars related to emerging technologies</li>
+					{#each professionalDevelopment as item}
+						<li>{item}</li>
+					{/each}
 				</ul>
 			</GlassBox>
 		</section>
@@ -98,6 +83,12 @@
 
 	h1 {
 		font-size: 2.2rem;
+		margin-bottom: 1rem;
+	}
+
+	.intro {
+		font-size: 1.1rem;
+		line-height: 1.6;
 		margin-bottom: 2rem;
 	}
 

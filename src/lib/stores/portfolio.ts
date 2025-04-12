@@ -6,9 +6,19 @@ import portfolioData from '$lib/data/portfolio.json';
 export interface PersonalInfo {
   name: string;
   title: string;
-  tagline: string;
+  mainTagline: string;
+  university: string;
   location: string;
   photo: string;
+}
+
+export interface PageIntros {
+  skills: string;
+  experience: string;
+  education: string;
+  projects: string;
+  about: string;
+  contact: string;
 }
 
 export interface About {
@@ -41,7 +51,7 @@ export interface Experience {
 export interface Skill {
   name: string;
   description: string;
-  level: 'beginner' | 'intermediate' | 'advanced' | 'expert';
+  level: string;
 }
 
 export interface Skills {
@@ -78,6 +88,7 @@ export interface Footer {
 
 export interface PortfolioData {
   personalInfo: PersonalInfo;
+  pageIntros: PageIntros;
   about: About;
   education: Education[];
   professionalDevelopment: string[];
@@ -94,6 +105,7 @@ export const portfolio: Readable<PortfolioData> = readable(portfolioData as Port
 
 // Helper functions to access specific sections of the portfolio data
 export const getPersonalInfo = (): PersonalInfo => portfolioData.personalInfo;
+export const getPageIntros = (): PageIntros => portfolioData.pageIntros;
 export const getAbout = (): About => portfolioData.about;
 export const getEducation = (): Education[] => portfolioData.education;
 export const getProfessionalDevelopment = (): string[] => portfolioData.professionalDevelopment;

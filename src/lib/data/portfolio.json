@@ -7,6 +7,14 @@
     "location": "Alexandria, VA",
     "photo": "/images/profile-photo.jpeg"
   },
+  "pageIntros": {
+    "skills": "My unique combination of technical knowledge and management education has provided me with a diverse skill set that allows me to effectively bridge the gap between technical teams and business objectives.",
+    "experience": "",
+    "education": "",
+    "projects": "Below are selected projects that demonstrate my skills in engineering and project management. These include both academic projects from my graduate studies and professional work.",
+    "about": "",
+    "contact": ""
+  },
   "about": {
     "intro": "I am a former Hewlett Packard Enterprises professional currently pursuing a Master of Science in Engineering Management at George Washington University. Based in Alexandria, VA, I'm passionate about leveraging my technical background and management education to excel in Project Management roles.",
     "background": "With experience in the technology sector and a strong educational foundation in engineering, I am positioned to bridge the gap between technical teams and business objectives.",

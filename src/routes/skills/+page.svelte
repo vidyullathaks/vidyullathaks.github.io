@@ -1,5 +1,12 @@
 <script>
 	import GlassBox from '$lib/components/GlassBox.svelte';
+	import { getSkills, getPageIntros } from '$lib/stores/portfolio';
+
+	// Get skills data
+	const { technical, management, soft } = getSkills();
+
+	// Get page intro from portfolio data
+	const pageIntros = getPageIntros();
 </script>
 
 <svelte:head>
@@ -12,183 +19,58 @@
 		<h1>Skills & Capabilities</h1>
 
 		<p class="intro">
-			My unique combination of technical knowledge and management education has provided me with a diverse
-			skill set that allows me to effectively bridge the gap between technical teams and business objectives.
+			{pageIntros.skills}
 		</p>
 
 		<div class="skills-categories">
 			<section class="skills-category">
 				<h2>Technical Skills</h2>
 				<div class="skills-grid">
-					<GlassBox padding="1.2rem" className="skill-item">
-						<div class="skill-header">
-							<h3>Engineering Processes</h3>
-							<div class="skill-level">
-								<div class="level-indicator advanced"></div>
+					{#each technical as skill}
+						<GlassBox padding="1.2rem" className="skill-item">
+							<div class="skill-header">
+								<h3>{skill.name}</h3>
+								<div class="skill-level">
+									<div class="level-indicator {skill.level}"></div>
+								</div>
 							</div>
-						</div>
-						<p>Implementation and optimization of standardized engineering processes</p>
-					</GlassBox>
-
-					<GlassBox padding="1.2rem" className="skill-item">
-						<div class="skill-header">
-							<h3>Technical Documentation</h3>
-							<div class="skill-level">
-								<div class="level-indicator expert"></div>
-							</div>
-						</div>
-						<p>Creating comprehensive technical specifications and user guides</p>
-					</GlassBox>
-
-					<GlassBox padding="1.2rem" className="skill-item">
-						<div class="skill-header">
-							<h3>Quality Assurance</h3>
-							<div class="skill-level">
-								<div class="level-indicator advanced"></div>
-							</div>
-						</div>
-						<p>Implementing testing methodologies to ensure solution reliability</p>
-					</GlassBox>
-
-					<GlassBox padding="1.2rem" className="skill-item">
-						<div class="skill-header">
-							<h3>Data Analysis</h3>
-							<div class="skill-level">
-								<div class="level-indicator intermediate"></div>
-							</div>
-						</div>
-						<p>Analyzing and interpreting data to inform technical decisions</p>
-					</GlassBox>
-
-					<GlassBox padding="1.2rem" className="skill-item">
-						<div class="skill-header">
-							<h3>System Integration</h3>
-							<div class="skill-level">
-								<div class="level-indicator intermediate"></div>
-							</div>
-						</div>
-						<p>Implementing solutions that connect different technical systems</p>
-					</GlassBox>
-
-					<GlassBox padding="1.2rem" className="skill-item">
-						<div class="skill-header">
-							<h3>Technical Troubleshooting</h3>
-							<div class="skill-level">
-								<div class="level-indicator advanced"></div>
-							</div>
-						</div>
-						<p>Diagnosing and resolving complex technical issues</p>
-					</GlassBox>
+							<p>{skill.description}</p>
+						</GlassBox>
+					{/each}
 				</div>
 			</section>
 
 			<section class="skills-category">
 				<h2>Management Skills</h2>
 				<div class="skills-grid">
-					<GlassBox padding="1.2rem" className="skill-item">
-						<div class="skill-header">
-							<h3>Project Coordination</h3>
-							<div class="skill-level">
-								<div class="level-indicator advanced"></div>
+					{#each management as skill}
+						<GlassBox padding="1.2rem" className="skill-item">
+							<div class="skill-header">
+								<h3>{skill.name}</h3>
+								<div class="skill-level">
+									<div class="level-indicator {skill.level}"></div>
+								</div>
 							</div>
-						</div>
-						<p>Managing project timelines, resources, and deliverables</p>
-					</GlassBox>
-
-					<GlassBox padding="1.2rem" className="skill-item">
-						<div class="skill-header">
-							<h3>Team Collaboration</h3>
-							<div class="skill-level">
-								<div class="level-indicator expert"></div>
-							</div>
-						</div>
-						<p>Working effectively across cross-functional teams</p>
-					</GlassBox>
-
-					<GlassBox padding="1.2rem" className="skill-item">
-						<div class="skill-header">
-							<h3>Resource Planning</h3>
-							<div class="skill-level">
-								<div class="level-indicator intermediate"></div>
-							</div>
-						</div>
-						<p>Allocating resources efficiently to meet project needs</p>
-					</GlassBox>
-
-					<GlassBox padding="1.2rem" className="skill-item">
-						<div class="skill-header">
-							<h3>Strategic Analysis</h3>
-							<div class="skill-level">
-								<div class="level-indicator intermediate"></div>
-							</div>
-						</div>
-						<p>Evaluating options to determine optimal approaches</p>
-					</GlassBox>
-
-					<GlassBox padding="1.2rem" className="skill-item">
-						<div class="skill-header">
-							<h3>Risk Management</h3>
-							<div class="skill-level">
-								<div class="level-indicator advanced"></div>
-							</div>
-						</div>
-						<p>Identifying and mitigating potential project risks</p>
-					</GlassBox>
-
-					<GlassBox padding="1.2rem" className="skill-item">
-						<div class="skill-header">
-							<h3>Process Improvement</h3>
-							<div class="skill-level">
-								<div class="level-indicator advanced"></div>
-							</div>
-						</div>
-						<p>Optimizing workflows for increased efficiency</p>
-					</GlassBox>
+							<p>{skill.description}</p>
+						</GlassBox>
+					{/each}
 				</div>
 			</section>
 
 			<section class="skills-category">
 				<h2>Soft Skills</h2>
 				<div class="skills-grid">
-					<GlassBox padding="1.2rem" className="skill-item">
-						<div class="skill-header">
-							<h3>Communication</h3>
-							<div class="skill-level">
-								<div class="level-indicator expert"></div>
+					{#each soft as skill}
+						<GlassBox padding="1.2rem" className="skill-item">
+							<div class="skill-header">
+								<h3>{skill.name}</h3>
+								<div class="skill-level">
+									<div class="level-indicator {skill.level}"></div>
+								</div>
 							</div>
-						</div>
-						<p>Clearly conveying complex information to diverse audiences</p>
-					</GlassBox>
-
-					<GlassBox padding="1.2rem" className="skill-item">
-						<div class="skill-header">
-							<h3>Problem Solving</h3>
-							<div class="skill-level">
-								<div class="level-indicator advanced"></div>
-							</div>
-						</div>
-						<p>Analyzing challenges and developing effective solutions</p>
-					</GlassBox>
-
-					<GlassBox padding="1.2rem" className="skill-item">
-						<div class="skill-header">
-							<h3>Adaptability</h3>
-							<div class="skill-level">
-								<div class="level-indicator expert"></div>
-							</div>
-						</div>
-						<p>Flexibly responding to changing requirements and environments</p>
-					</GlassBox>
-
-					<GlassBox padding="1.2rem" className="skill-item">
-						<div class="skill-header">
-							<h3>Leadership</h3>
-							<div class="skill-level">
-								<div class="level-indicator intermediate"></div>
-							</div>
-						</div>
-						<p>Guiding teams toward shared goals and objectives</p>
-					</GlassBox>
+							<p>{skill.description}</p>
+						</GlassBox>
+					{/each}
 				</div>
 			</section>
 		</div>

@@ -1,6 +1,13 @@
 <script>
 	import SocialIcons from '$lib/components/SocialIcons.svelte';
 	import GlassBox from '$lib/components/GlassBox.svelte';
+	import { getContact, getPageIntros } from '$lib/stores/portfolio';
+
+	// Get contact data
+	const contactData = getContact();
+
+	// Get page intro from portfolio data
+	const pageIntros = getPageIntros();
 </script>
 
 <svelte:head>
@@ -13,11 +20,13 @@
 		<section class="contact-section">
 			<h1>Get in Touch</h1>
 
+			<p class="page-intro">
+				{pageIntros.contact}
+			</p>
+
 			<GlassBox className="contact-card" padding="2rem">
 				<p class="intro">
-					I'm always open to discussing project management opportunities, professional collaborations, or
-					just connecting with fellow engineering management professionals. Feel free to reach out through any
-					of the following channels:
+					{contactData.intro}
 				</p>
 
 				<div class="social-section">
@@ -31,14 +40,12 @@
 			<h2>Current Availability</h2>
 			<GlassBox padding="1.5rem">
 				<p>
-					I am currently focused on completing my MS in Engineering Management at George Washington University,
-					with expected graduation in 2024. I am open to discussing:
+					{contactData.availability}
 				</p>
 				<ul>
-					<li>Full-time project management opportunities beginning mid-2024</li>
-					<li>Part-time consulting roles in engineering management</li>
-					<li>Networking with industry professionals</li>
-					<li>Collaboration on research or academic projects</li>
+					{#each contactData.availabilityOptions as option}
+						<li>{option}</li>
+					{/each}
 				</ul>
 			</GlassBox>
 		</section>
@@ -47,8 +54,7 @@
 			<h2>Response Time</h2>
 			<GlassBox padding="1.5rem">
 				<p>
-					I typically respond to inquiries within 24-48 hours. For urgent matters, please mention this in your
-					message subject line.
+					{contactData.responseTime}
 				</p>
 			</GlassBox>
 		</section>
@@ -73,7 +79,13 @@
 
 	h1 {
 		font-size: 2.2rem;
-		margin-bottom: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.page-intro {
+		font-size: 1.1rem;
+		line-height: 1.6;
+		margin-bottom: 2rem;
 	}
 
 	h2 {

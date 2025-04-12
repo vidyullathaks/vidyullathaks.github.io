@@ -1,6 +1,12 @@
 <script>
 	import GlassBox from '$lib/components/GlassBox.svelte';
-	// You can add any imports here if needed
+	import { getProjects, getPageIntros } from '$lib/stores/portfolio';
+
+	// Get projects data
+	const projectsData = getProjects();
+
+	// Get page intro from portfolio data
+	const pageIntros = getPageIntros();
 </script>
 
 <svelte:head>
@@ -12,94 +18,27 @@
 	<div class="container">
 		<h1>Projects</h1>
 		<p class="intro">
-			Below are selected projects that demonstrate my skills in engineering and project management.
-			These include both academic projects from my graduate studies and professional work.
+			{pageIntros.projects}
 		</p>
 
 		<div class="projects-grid">
-			<GlassBox className="project-card">
-				<div class="project-content">
-					<h2>Supply Chain Optimization</h2>
-					<p class="project-type">Academic Project | GWU</p>
-					<p>
-						Led a team of 4 to analyze and optimize a simulated supply chain network. We developed
-						models to improve inventory management and distribution, resulting in a 15% theoretical
-						reduction in operational costs.
-					</p>
-					<ul class="skills-used">
-						<li>Data Analysis</li>
-						<li>Process Optimization</li>
-						<li>Team Leadership</li>
-						<li>Systems Engineering</li>
-					</ul>
-					<div class="project-footer">
-						<span class="date">Spring 2024</span>
+			{#each projectsData as project}
+				<GlassBox className="project-card">
+					<div class="project-content">
+						<h2>{project.title}</h2>
+						<p class="project-type">{project.type}</p>
+						<p>{project.description}</p>
+						<ul class="skills-used">
+							{#each project.skills as skill}
+								<li>{skill}</li>
+							{/each}
+						</ul>
+						<div class="project-footer">
+							<span class="date">{project.date}</span>
+						</div>
 					</div>
-				</div>
-			</GlassBox>
-
-			<GlassBox className="project-card">
-				<div class="project-content">
-					<h2>Technical Documentation Management System</h2>
-					<p class="project-type">Professional Project | HPE</p>
-					<p>
-						Coordinated the implementation of a streamlined technical documentation system that
-						improved accessibility and version control across multiple engineering teams. The
-						project involved stakeholder management and technical requirements gathering.
-					</p>
-					<ul class="skills-used">
-						<li>Project Coordination</li>
-						<li>Requirements Analysis</li>
-						<li>Process Implementation</li>
-						<li>Stakeholder Management</li>
-					</ul>
-					<div class="project-footer">
-						<span class="date">2022</span>
-					</div>
-				</div>
-			</GlassBox>
-
-			<GlassBox className="project-card">
-				<div class="project-content">
-					<h2>Engineering Workflow Automation</h2>
-					<p class="project-type">Professional Project | HPE</p>
-					<p>
-						Contributed to a team that automated repetitive engineering tasks, reducing manual
-						work by approximately 25 hours per week across the department. The project involved
-						identifying inefficiencies and implementing technical solutions.
-					</p>
-					<ul class="skills-used">
-						<li>Workflow Analysis</li>
-						<li>Process Improvement</li>
-						<li>Technical Implementation</li>
-						<li>Quality Assurance</li>
-					</ul>
-					<div class="project-footer">
-						<span class="date">2021</span>
-					</div>
-				</div>
-			</GlassBox>
-
-			<GlassBox className="project-card">
-				<div class="project-content">
-					<h2>Risk Management Framework</h2>
-					<p class="project-type">Academic Project | GWU</p>
-					<p>
-						Developed a comprehensive risk assessment and management framework for technical
-						projects, integrating both quantitative and qualitative analysis methods. The
-						framework was designed to help project managers identify and mitigate risks early.
-					</p>
-					<ul class="skills-used">
-						<li>Risk Assessment</li>
-						<li>Project Management</li>
-						<li>Strategic Analysis</li>
-						<li>Framework Development</li>
-					</ul>
-					<div class="project-footer">
-						<span class="date">Fall 2023</span>
-					</div>
-				</div>
-			</GlassBox>
+				</GlassBox>
+			{/each}
 		</div>
 
 		<div class="back-link">

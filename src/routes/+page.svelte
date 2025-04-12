@@ -3,27 +3,16 @@
 	import GlassBox from '$lib/components/GlassBox.svelte';
 	import SocialIcons from '$lib/components/SocialIcons.svelte';
 
-	// Import portfolio data
-	import portfolioData from '$lib/data/portfolio.json';
+	// Import portfolio data through the store
+	import { getPersonalInfo, type PersonalInfo } from '$lib/stores/portfolio';
 
-	// Define extended interface to include optional university property
-	interface PersonalInfo {
-		name: string;
-		title: string;
-		mainTagline: string;
-		location: string;
-		photo: string;
-		university?: string;
-	}
-
-	// Destructure data for easier access and use type assertion
-	const { personalInfo } = portfolioData;
-	const typedPersonalInfo = personalInfo as PersonalInfo;
+	// Get personal info data
+	const personalInfo = getPersonalInfo();
 </script>
 
 <svelte:head>
-	<title>{typedPersonalInfo.name} | {typedPersonalInfo.title}</title>
-	<meta name="description" content="Portfolio website for {typedPersonalInfo.name}, {typedPersonalInfo.mainTagline}{typedPersonalInfo.university ? ` at ${typedPersonalInfo.university}` : ''}" />
+	<title>{personalInfo.name} | {personalInfo.title}</title>
+	<meta name="description" content="Portfolio website for {personalInfo.name}, {personalInfo.mainTagline}" />
 </svelte:head>
 
 <main>
@@ -32,17 +21,19 @@
 			<GlassBox className="hero-glass-box" hoverEffect={false}>
 				<div class="hero-content">
 					<div class="text-content">
-						<h1>{typedPersonalInfo.name}</h1>
-						<h2>{typedPersonalInfo.title}</h2>
-						<p class="tagline">{typedPersonalInfo.mainTagline}</p>
-						{#if typedPersonalInfo.university}
-							<p class="university">{typedPersonalInfo.university}</p>
+						<h1>{personalInfo.name}</h1>
+						<h2>{personalInfo.title}</h2>
+						{#if personalInfo.mainTagline}
+							<p class="tagline">{personalInfo.mainTagline}</p>
+						{/if}
+						{#if personalInfo.university}
+							<p class="university">{personalInfo.university}</p>
 						{/if}
 					</div>
 					<div class="photo-bubble">
 						<img
-							src={typedPersonalInfo.photo}
-							alt={`Photo of ${typedPersonalInfo.name}`}
+							src={personalInfo.photo}
+							alt={`Photo of ${personalInfo.name}`}
 							class="profile-photo"
 						/>
 					</div>
