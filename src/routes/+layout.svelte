@@ -2,7 +2,16 @@
 	import '../app.css';
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import SocialIcons from '$lib/components/SocialIcons.svelte';
+	import FloatingShapes from '$lib/components/backgrounds/FloatingShapes.svelte';
 	import { onMount } from 'svelte';
+
+	// Theme-aware colors for floating shapes
+	let shapeColors = [
+		'var(--color-primary)',
+		'rgba(var(--color-primary-rgb), 0.6)',
+		'rgba(var(--color-primary-hover-rgb), 0.5)',
+		'rgba(var(--color-primary-rgb), 0.3)'
+	];
 
 	let mobileMenuOpen = false;
 
@@ -44,6 +53,15 @@
 </script>
 
 <div class="app">
+	<!-- Floating shapes background -->
+	<FloatingShapes
+		count={8}
+		colors={shapeColors}
+		opacity={0.15}
+		zIndex={-1}
+		speed={0.7}
+	/>
+
 	<header>
 		<div class="header-backdrop"></div>
 		<div class="container">
