@@ -1,0 +1,255 @@
+<script lang="ts">
+	import '../app.css';
+	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
+	import SocialIcons from '$lib/components/SocialIcons.svelte';
+	import { onMount } from 'svelte';
+
+	let mobileMenuOpen = false;
+
+	function toggleMenu() {
+		mobileMenuOpen = !mobileMenuOpen;
+		const navItems = document.querySelector('.nav-items');
+		if (navItems) {
+			navItems.classList.toggle('active', mobileMenuOpen);
+		}
+	}
+
+	function closeMenuOnClick() {
+		const links = document.querySelectorAll('.nav-items a');
+		links.forEach(link => {
+			link.addEventListener('click', () => {
+				mobileMenuOpen = false;
+				const navItems = document.querySelector('.nav-items');
+				if (navItems) {
+					navItems.classList.remove('active');
+				}
+			});
+		});
+	}
+
+	onMount(() => {
+		closeMenuOnClick();
+	});
+</script>
+
+<div class="app">
+	<header>
+		<div class="header-backdrop"></div>
+		<div class="container">
+			<div class="header-content">
+				<nav>
+					<a href="/" class="home">Vidyullatha KS</a>
+					<div class="nav-items">
+						<ul>
+							<li><a href="/about">About</a></li>
+							<li><a href="/education">Education</a></li>
+							<li><a href="/experience">Experience</a></li>
+							<li><a href="/skills">Skills</a></li>
+							<li><a href="/projects">Projects</a></li>
+							<li><a href="/contact">Contact</a></li>
+						</ul>
+					</div>
+					<button class="mobile-toggle" aria-label="Toggle menu" on:click={toggleMenu}>
+						<div class="bar"></div>
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</button>
+				</nav>
+				<ThemeToggle />
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<slot />
+	</main>
+
+	<footer>
+		<div class="container">
+			<SocialIcons size={22} gap="1rem" light={true} />
+			<p>&copy; {new Date().getFullYear()} Vidyullatha KS. All rights reserved.</p>
+		</div>
+	</footer>
+</div>
+
+<style>
+	.app {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+	}
+
+	main {
+		flex: 1;
+	}
+
+	header {
+		position: sticky;
+		top: 0;
+		z-index: 100;
+	}
+
+	.header-backdrop {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		backdrop-filter: blur(8px);
+		background-color: rgba(var(--color-bg-rgb), 0.8);
+		z-index: -1;
+	}
+
+	.header-content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	.container {
+		max-width: 1200px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+	nav {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		padding: 1rem 0;
+	}
+
+	nav a.home {
+		font-weight: 700;
+		font-size: 1.2rem;
+		color: var(--color-text);
+		text-decoration: none;
+	}
+
+	.nav-items ul {
+		display: flex;
+		gap: 1.5rem;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-items a {
+		color: var(--color-text);
+		text-decoration: none;
+		font-weight: 500;
+		transition: color 0.3s ease;
+	}
+
+	.nav-items a:hover {
+		color: var(--color-primary);
+	}
+
+	footer {
+		background-color: var(--color-footer-bg);
+		color: var(--color-footer-text);
+		padding: 1.5rem 0;
+		text-align: center;
+		transition: background-color 0.3s ease, color 0.3s ease;
+	}
+
+	footer .container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.75rem;
+	}
+
+	footer p {
+		margin: 0;
+		font-size: 0.9rem;
+	}
+
+	.mobile-toggle {
+		display: none;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 30px;
+		height: 21px;
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		padding: 0;
+		z-index: 10;
+	}
+
+	.mobile-toggle .bar {
+		height: 3px;
+		width: 100%;
+		background-color: var(--color-text);
+		border-radius: 10px;
+		transition: all 0.3s ease;
+	}
+
+	@media (max-width: 768px) {
+		.mobile-toggle {
+			display: flex;
+		}
+
+		.nav-items {
+			display: none;
+			position: fixed;
+			top: var(--header-height, 60px);
+			left: 0;
+			right: 0;
+			background-color: rgba(var(--color-bg-rgb), 0.95);
+			backdrop-filter: blur(8px);
+			padding: 1rem;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+
+		.nav-items.active {
+			display: block;
+		}
+
+		.nav-items ul {
+			flex-direction: column;
+			align-items: center;
+			gap: 1rem;
+		}
+
+		.nav-items a {
+			font-size: 1.1rem;
+			padding: 0.5rem 0;
+			display: block;
+		}
+	}
+
+	:global(body) {
+		background: linear-gradient(45deg, #ff7e5f, #feb47b, #ffcda5, #aedd94, #70d6ff, #4d8fac);
+		background-size: 600% 600%;
+		animation: gradientBackground 15s ease infinite;
+		font-family: 'Avenir', 'Avenir Next', 'Helvetica Neue', Arial, sans-serif;
+		color: var(--color-text);
+		font-size: 16px;
+		line-height: 1.5;
+		min-height: 100vh;
+		transition: background-color 0.3s ease, color 0.3s ease;
+	}
+
+	:global(.dark body) {
+		background: linear-gradient(45deg, #8a2100, #aa4400, #553355, #224466, #003366, #1a2a3a);
+		background-size: 600% 600%;
+		animation: gradientBackground 15s ease infinite;
+	}
+
+	@keyframes gradientBackground {
+		0% {
+			background-position: 0% 50%;
+		}
+		50% {
+			background-position: 100% 50%;
+		}
+		100% {
+			background-position: 0% 50%;
+		}
+	}
+</style>
