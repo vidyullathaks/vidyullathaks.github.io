@@ -2,16 +2,7 @@
 	import '../app.css';
 	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 	import SocialIcons from '$lib/components/SocialIcons.svelte';
-	import FloatingShapes from '$lib/components/backgrounds/FloatingShapes.svelte';
 	import { onMount } from 'svelte';
-
-	// Theme-aware colors for floating shapes
-	let shapeColors = [
-		'var(--color-primary)',
-		'rgba(var(--color-primary-rgb), 0.6)',
-		'rgba(var(--color-primary-hover-rgb), 0.5)',
-		'rgba(var(--color-primary-rgb), 0.3)'
-	];
 
 	let mobileMenuOpen = false;
 
@@ -53,15 +44,6 @@
 </script>
 
 <div class="app">
-	<!-- Floating shapes background -->
-	<FloatingShapes
-		count={8}
-		colors={shapeColors}
-		opacity={0.15}
-		zIndex={-1}
-		speed={0.7}
-	/>
-
 	<header>
 		<div class="header-backdrop"></div>
 		<div class="container">
@@ -286,15 +268,15 @@
 	}
 
 	:global(body) {
-		background: linear-gradient(45deg, #ff7e5f, #feb47b, #ffcda5, #aedd94, #70d6ff, #4d8fac);
-		background-size: 600% 600%;
-		animation: gradientBackground 15s ease infinite;
 		font-family: 'Avenir', 'Avenir Next', 'Helvetica Neue', Arial, sans-serif;
 		color: var(--color-text);
 		font-size: 16px;
 		line-height: 1.5;
 		min-height: 100vh;
 		transition: background-color 0.3s ease, color 0.3s ease;
+		background: linear-gradient(45deg, #ff7e5f, #feb47b, #ffcda5, #aedd94, #70d6ff, #4d8fac);
+		background-size: 600% 600%;
+		animation: gradientBackground 15s ease infinite;
 	}
 
 	:global(.dark body) {
