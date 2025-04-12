@@ -1,12 +1,29 @@
 <script lang="ts">
 	// Import components
-	import SocialIcons from '$lib/components/SocialIcons.svelte';
 	import GlassBox from '$lib/components/GlassBox.svelte';
+	import SocialIcons from '$lib/components/SocialIcons.svelte';
+
+	// Import portfolio data
+	import portfolioData from '$lib/data/portfolio.json';
+
+	// Define extended interface to include optional university property
+	interface PersonalInfo {
+		name: string;
+		title: string;
+		mainTagline: string;
+		location: string;
+		photo: string;
+		university?: string;
+	}
+
+	// Destructure data for easier access and use type assertion
+	const { personalInfo } = portfolioData;
+	const typedPersonalInfo = personalInfo as PersonalInfo;
 </script>
 
 <svelte:head>
-	<title>Vidyullatha KS | Engineering Management Professional</title>
-	<meta name="description" content="Portfolio website for Vidyullatha KS, GWU MS in Engineering Management student" />
+	<title>{typedPersonalInfo.name} | {typedPersonalInfo.title}</title>
+	<meta name="description" content="Portfolio website for {typedPersonalInfo.name}, {typedPersonalInfo.mainTagline}{typedPersonalInfo.university ? ` at ${typedPersonalInfo.university}` : ''}" />
 </svelte:head>
 
 <main>
@@ -15,15 +32,19 @@
 			<GlassBox className="hero-glass-box" hoverEffect={false}>
 				<div class="hero-content">
 					<div class="text-content">
-						<h1>Vidyullatha KS</h1>
-						<h2>Engineering Management Professional</h2>
-						<p class="tagline">MS in Engineering Management candidate at George Washington University</p>
+						<h1>{typedPersonalInfo.name}</h1>
+						<h2>{typedPersonalInfo.title}</h2>
+						<p class="tagline">{typedPersonalInfo.mainTagline}</p>
+						{#if typedPersonalInfo.university}
+							<p class="university">{typedPersonalInfo.university}</p>
+						{/if}
 					</div>
 					<div class="photo-bubble">
-						<!-- Add your photo here -->
-						<div class="photo-placeholder">
-							<span>Photo</span>
-						</div>
+						<img
+							src={typedPersonalInfo.photo}
+							alt={`Photo of ${typedPersonalInfo.name}`}
+							class="profile-photo"
+						/>
 					</div>
 				</div>
 			</GlassBox>
@@ -67,11 +88,6 @@
 		font-size: 2.2rem;
 		margin-bottom: 1.5rem;
 		text-align: left;
-	}
-
-	h3 {
-		font-size: 1.3rem;
-		margin-bottom: 0.5rem;
 	}
 
 	.hero {
@@ -119,6 +135,15 @@
 		color: var(--color-text-muted);
 		max-width: 500px;
 		margin: 0;
+		margin-bottom: 0.3rem;
+	}
+
+	.university {
+		font-size: 1.4rem;
+		color: var(--color-text-muted);
+		max-width: 500px;
+		margin: 0;
+		font-weight: 500;
 	}
 
 	.photo-bubble {
@@ -127,17 +152,12 @@
 		justify-content: center;
 	}
 
-	.photo-placeholder {
+	.profile-photo {
 		width: 300px;
 		height: 300px;
 		border-radius: 50%;
-		background-color: rgba(var(--color-primary-rgb), 0.1);
+		object-fit: cover;
 		border: 2px solid rgba(var(--color-primary-rgb), 0.3);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		color: var(--color-text-muted);
-		font-size: 1.8rem;
 	}
 
 	.social-container {
@@ -168,7 +188,7 @@
 			margin-left: 30px;
 		}
 
-		.photo-placeholder {
+		.profile-photo {
 			width: 250px;
 			height: 250px;
 		}
@@ -187,7 +207,7 @@
 			font-size: 1.8rem;
 		}
 
-		.tagline {
+		.tagline, .university {
 			font-size: 1.2rem;
 		}
 
@@ -207,15 +227,19 @@
 			text-align: center;
 		}
 
-		.tagline {
+		.tagline, .university {
 			margin: 0 auto;
+		}
+
+		.tagline {
+			margin-bottom: 0.3rem;
 		}
 
 		.photo-bubble {
 			margin-left: 0;
 		}
 
-		.photo-placeholder {
+		.profile-photo {
 			width: 220px;
 			height: 220px;
 		}
