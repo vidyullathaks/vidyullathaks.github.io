@@ -1,0 +1,23 @@
+name: GitHub Pages Configuration
+
+on:
+  workflow_run:
+    workflows: ["Deploy to GitHub Pages"]
+    types:
+      - completed
+
+jobs:
+  configure:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .nojekyll
+        run: touch .nojekyll
+
+      - name: Commit .nojekyll
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Add .nojekyll file"
+          file_pattern: ".nojekyll"
