@@ -36,6 +36,11 @@ export const applyTheme = (newTheme: Theme) => {
 
 // Initialize theme on client side
 if (browser) {
+  // Set system as default if no theme is saved yet
+  if (!localStorage.getItem('theme')) {
+    localStorage.setItem('theme', 'system');
+  }
+
   // Subscribe to theme changes
   theme.subscribe(applyTheme);
 
