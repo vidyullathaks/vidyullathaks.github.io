@@ -8,27 +8,38 @@
 
 	function toggleMenu() {
 		mobileMenuOpen = !mobileMenuOpen;
+	}
+
+	// Close menu when clicking outside
+	function handleClickOutside(event: MouseEvent) {
+		const target = event.target as HTMLElement;
 		const navItems = document.querySelector('.nav-items');
-		if (navItems) {
-			navItems.classList.toggle('active', mobileMenuOpen);
+		const mobileToggle = document.querySelector('.mobile-toggle');
+
+		if (
+			mobileMenuOpen &&
+			navItems &&
+			mobileToggle &&
+			!navItems.contains(target) &&
+			!mobileToggle.contains(target)
+		) {
+			mobileMenuOpen = false;
 		}
 	}
 
-	function closeMenuOnClick() {
-		const links = document.querySelectorAll('.nav-items a');
-		links.forEach(link => {
-			link.addEventListener('click', () => {
-				mobileMenuOpen = false;
-				const navItems = document.querySelector('.nav-items');
-				if (navItems) {
-					navItems.classList.remove('active');
-				}
-			});
-		});
+	// Close menu when nav links are clicked
+	function closeMenu() {
+		mobileMenuOpen = false;
 	}
 
 	onMount(() => {
-		closeMenuOnClick();
+		// Add click outside listener
+		document.addEventListener('click', handleClickOutside);
+
+		// Clean up the listener when component is destroyed
+		return () => {
+			document.removeEventListener('click', handleClickOutside);
+		};
 	});
 </script>
 
@@ -39,21 +50,21 @@
 			<div class="header-content">
 				<nav>
 					<a href="/" class="home">Vidyullatha KS</a>
-					<div class="nav-items">
-						<ul>
-							<li><a href="/about">About</a></li>
-							<li><a href="/education">Education</a></li>
-							<li><a href="/experience">Experience</a></li>
-							<li><a href="/skills">Skills</a></li>
-							<li><a href="/projects">Projects</a></li>
-							<li><a href="/contact">Contact</a></li>
-						</ul>
-					</div>
-					<button class="mobile-toggle" aria-label="Toggle menu" on:click={toggleMenu}>
+					<button class="mobile-toggle" class:active={mobileMenuOpen} aria-label="Toggle menu" on:click={toggleMenu}>
 						<div class="bar"></div>
 						<div class="bar"></div>
 						<div class="bar"></div>
 					</button>
+					<div class="nav-items" class:active={mobileMenuOpen}>
+						<ul>
+							<li><a href="/about" on:click={closeMenu}>About</a></li>
+							<li><a href="/education" on:click={closeMenu}>Education</a></li>
+							<li><a href="/experience" on:click={closeMenu}>Experience</a></li>
+							<li><a href="/skills" on:click={closeMenu}>Skills</a></li>
+							<li><a href="/projects" on:click={closeMenu}>Projects</a></li>
+							<li><a href="/contact" on:click={closeMenu}>Contact</a></li>
+						</ul>
+					</div>
 				</nav>
 				<ThemeToggle />
 			</div>
@@ -66,7 +77,7 @@
 
 	<footer>
 		<div class="container">
-			<SocialIcons size={22} gap="1rem" light={true} />
+			<SocialIcons size={18} gap="1rem" light={true} />
 			<p>&copy; {new Date().getFullYear()} Vidyullatha KS. All rights reserved.</p>
 		</div>
 	</footer>
@@ -172,26 +183,57 @@
 		display: none;
 		flex-direction: column;
 		justify-content: space-between;
-		width: 30px;
-		height: 21px;
+		width: 20px;
+		height: 15px;
 		background: transparent;
 		border: none;
 		cursor: pointer;
 		padding: 0;
-		z-index: 10;
+		z-index: 101;
+		margin-left: auto;
+		position: relative;
+		border-radius: 4px;
+		transition: background-color 0.2s ease;
+	}
+
+	.mobile-toggle:hover {
+		background-color: rgba(var(--color-text-rgb), 0.1);
+	}
+
+	.mobile-toggle:active {
+		background-color: rgba(var(--color-text-rgb), 0.2);
 	}
 
 	.mobile-toggle .bar {
-		height: 3px;
+		height: 1.5px;
 		width: 100%;
 		background-color: var(--color-text);
-		border-radius: 10px;
-		transition: all 0.3s ease;
+		border-radius: 1px;
+		position: relative;
+		box-shadow: 0 0 0.5px rgba(0, 0, 0, 0.2);
+	}
+
+	/* Space bars further apart to match image */
+	.mobile-toggle .bar:nth-child(1) {
+		margin-bottom: 4px;
+	}
+
+	.mobile-toggle .bar:nth-child(2) {
+		margin-bottom: 4px;
 	}
 
 	@media (max-width: 768px) {
 		.mobile-toggle {
 			display: flex;
+		}
+
+		.header-content {
+			position: relative;
+		}
+
+		nav {
+			flex-wrap: wrap;
+			position: relative;
 		}
 
 		.nav-items {
@@ -204,6 +246,8 @@
 			backdrop-filter: blur(8px);
 			padding: 1rem;
 			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+			z-index: 100;
+			width: 100%;
 		}
 
 		.nav-items.active {
