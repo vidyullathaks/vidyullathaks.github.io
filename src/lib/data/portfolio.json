@@ -2,7 +2,7 @@
   "personalInfo": {
     "name": "Vidyullatha KS",
     "title": "Product Manager | Data Analyst | Business Systems Analyst",
-    "mainTagline": "I turn complex business problems into clear product strategies and data-driven solutions. With 4+ years at HPE and a Master's in Engineering/Business Management, I bridge technical execution and strategic thinking—delivering measurable impact through analytics, product development, and cross-functional leadership.",
+    "mainTagline": "I turn complex business problems into clear product strategies and data-driven solutions. With 4+ years at HPE and a Master's in Engineering/Business Management, I bridge technical execution and strategic thinking-delivering measurable impact through analytics, product development, and cross-functional leadership.",
     "university": "George Washington University",
     "location": "Alexandria, VA",
     "photo": "/images/profile-photo.jpeg"
@@ -11,14 +11,14 @@
     "skills": "Combining technical expertise in data analytics, product management, and software development with strategic business acumen to deliver solutions that drive measurable results.",
     "experience": "Progressive career trajectory from Software Designer to Product Manager, consistently delivering quantifiable impact: 47% faster queries, 35% efficiency gains, 45% engagement growth, and products adopted by hundreds of users.",
     "education": "",
-    "projects": "End-to-end projects demonstrating product thinking, analytical rigor, and technical execution—from market research studies informing pricing strategy to AI-powered workflow automation.",
+    "projects": "End-to-end projects demonstrating product thinking, analytical rigor, and technical execution-from market research studies informing pricing strategy to AI-powered workflow automation.",
     "about": "",
     "contact": ""
   },
   "about": {
     "intro": "Product-minded professional with a proven ability to translate user needs into technical solutions that deliver business value. Currently completing my Master's in Engineering/Business Management at George Washington University while driving student engagement programs that have increased participation by 30% and attendance by 45%.",
-    "background": "I spent four years at Hewlett Packard Enterprises building analytics platforms, optimizing data pipelines, and working with product teams to ship features that moved business metrics. My graduate work combines technical depth (Python, SQL, R) with business strategy (product management, marketing analytics, decision science)—positioning me at the intersection where data meets product.",
-    "professionalBackground": "At HPE, I advanced from Software Designer I to II by consistently delivering impact: I reduced query time by 47%, eliminated 8 hours of manual reporting weekly, and developed a POC that validated 30% performance improvements and secured executive buy-in for full-scale implementation. My current role extends this track record—I launched a 0-to-1 coaching program for 25+ student leaders, automated nomination processes with VBA, and drove 45% attendance growth through data-informed marketing strategies.",
+    "background": "I spent four years at Hewlett Packard Enterprises building analytics platforms, optimizing data pipelines, and working with product teams to ship features that moved business metrics. My graduate work combines technical depth (Python, SQL, R) with business strategy (product management, marketing analytics, decision science)-positioning me at the intersection where data meets product.",
+    "professionalBackground": "At HPE, I advanced from Software Designer I to II by consistently delivering impact: I reduced query time by 47%, eliminated 8 hours of manual reporting weekly, and developed a POC that validated 30% performance improvements and secured executive buy-in for full-scale implementation. My current role extends this track record-I launched a 0-to-1 coaching program for 25+ student leaders, automated nomination processes with VBA, and drove 45% attendance growth through data-informed marketing strategies.",
     "careerObjectives": "Seeking Product Manager, Business Systems Analyst, Data Analyst, or Project Manager roles where I can apply my technical background and product thinking to solve real business problems. I thrive in environments that value analytical rigor, user research, and cross-functional collaboration.",
     "interests": [
       "Product Management: Building 0-to-1 products, conducting user research, prioritizing roadmaps, and shipping features that users actually want",
@@ -91,9 +91,9 @@
       "responsibilities": [
         "Drove product strategy for student engagement programs through user research (surveys, 1:1 interviews with 50+ students) and feedback analysis, identifying unmet needs that improved participation by 30%",
         "Launched 0-to-1 coaching product after identifying gap through stakeholder interviews with 25+ student leaders; defined MVP features (conflict resolution, event planning templates), delivered in 8-week sprint cycle",
-        "Owned go-to-market strategy for signature events, defining target user segments, crafting messaging aligned with student needs, and iterating based on engagement metrics—increased attendance 45%",
+        "Owned go-to-market strategy for signature events, defining target user segments, crafting messaging aligned with student needs, and iterating based on engagement metrics-increased attendance 45%",
         "Automated nominee anonymization process using Qualtrics and Excel VBA for Student Leadership Awards, eliminating bias and reducing manual work",
-        "Led Agile project management practices—daily standups, bi-weekly sprint reviews, and clear task breakdowns to keep projects on schedule"
+        "Led Agile project management practices-daily standups, bi-weekly sprint reviews, and clear task breakdowns to keep projects on schedule"
       ],
       "achievements": [
         "30% increase in student participation through data-driven program design",
@@ -171,22 +171,22 @@
       },
       {
         "name": "Business Intelligence Tools",
-        "description": "Power BI, Tableau, Qlik—building dashboards, automated reports, and data visualization solutions that drive decision-making",
+        "description": "Power BI, Tableau, Qlik-building dashboards, automated reports, and data visualization solutions that drive decision-making",
         "level": "expert"
       },
       {
         "name": "Databases & Cloud",
-        "description": "MySQL, SAP HANA, Vertica, HDFS, NoSQL, Snowflake, AWS, Azure—designing data architectures and optimizing performance",
+        "description": "MySQL, SAP HANA, Vertica, HDFS, NoSQL, Snowflake, AWS, Azure-designing data architectures and optimizing performance",
         "level": "advanced"
       },
       {
         "name": "Programming & Automation",
-        "description": "Python, R, SQL, Advanced Excel (VBA, VLOOKUP, Power Query)—building analytical pipelines and automating workflows",
+        "description": "Python, R, SQL, Advanced Excel (VBA, VLOOKUP, Power Query)-building analytical pipelines and automating workflows",
         "level": "advanced"
       },
       {
         "name": "AI Tools",
-        "description": "Claude API, n8n workflow automation, LLM-based semantic analysis—building intelligent systems and AI-powered workflows",
+        "description": "Claude API, n8n workflow automation, LLM-based semantic analysis-building intelligent systems and AI-powered workflows",
         "level": "intermediate"
       }
     ],
@@ -237,22 +237,22 @@
     "tools": [
       {
         "name": "Project Management",
-        "description": "Jira, Asana, MS Project, Confluence, Trello—managing sprints, tracking progress, coordinating teams",
+        "description": "Jira, Asana, MS Project, Confluence, Trello-managing sprints, tracking progress, coordinating teams",
         "level": "advanced"
       },
       {
         "name": "Analytics Platforms",
-        "description": "Power BI, Tableau, Qlik, Google Analytics—creating dashboards, visualizing data, tracking KPIs",
+        "description": "Power BI, Tableau, Qlik, Google Analytics-creating dashboards, visualizing data, tracking KPIs",
         "level": "expert"
       },
       {
         "name": "Collaboration Tools",
-        "description": "Microsoft 365 (Teams, SharePoint, Outlook), Slack, Qualtrics—facilitating communication and knowledge sharing",
+        "description": "Microsoft 365 (Teams, SharePoint, Outlook), Slack, Qualtrics-facilitating communication and knowledge sharing",
         "level": "advanced"
       },
       {
         "name": "Development Tools",
-        "description": "Git/GitHub, VS Code, Jupyter Notebooks—version control, code development, data analysis workflows",
+        "description": "Git/GitHub, VS Code, Jupyter Notebooks-version control, code development, data analysis workflows",
         "level": "intermediate"
       }
     ]
