@@ -1,31 +1,31 @@
 {
   "personalInfo": {
-    "name": "Vidyullatha KS",
-    "title": "Data Analyst | Software Designer",
-    "mainTagline": "Turning data chaos into million-dollar decisions. I architect analytics solutions that don't just report numbers—they revolutionize operations, slash inefficiencies, and deliver the insights that keep executives awake at night (in a good way).",
+    "name": "Vidyullatha Kavilukodige Sathishrao",
+    "title": "Product Manager | Data Analyst | Business Systems Analyst",
+    "mainTagline": "I turn complex business problems into clear product strategies and data-driven solutions. With 4+ years at HPE and a Master's in Engineering/Business Management, I bridge technical execution and strategic thinking—delivering measurable impact through analytics, product development, and cross-functional leadership.",
     "university": "George Washington University",
     "location": "Alexandria, VA",
     "photo": "/images/profile-photo.jpeg"
   },
   "pageIntros": {
-    "skills": "Leveraging a powerful blend of technical mastery in data analytics, programming, and business intelligence, combined with strategic management acumen, I bridge the gap between raw data and executive decision-making—delivering insights that drive measurable business impact.",
-    "experience": "A progressive career trajectory marked by quantifiable achievements: from architecting data dashboards that saved 8+ hours weekly, to spearheading analytics initiatives that boosted operational efficiency by 60%, to leading programs that increased engagement by 45%.",
+    "skills": "Combining technical expertise in data analytics, product management, and software development with strategic business acumen to deliver solutions that drive measurable results.",
+    "experience": "Progressive career trajectory from Software Designer to Product Manager, consistently delivering quantifiable impact: 47% faster queries, 35% efficiency gains, 45% engagement growth, and products adopted by hundreds of users.",
     "education": "",
-    "projects": "Strategic initiatives showcasing end-to-end analytical expertise—from supply chain optimization to workflow automation—each delivering concrete, measurable results through data-driven methodologies and cross-functional leadership.",
+    "projects": "End-to-end projects demonstrating product thinking, analytical rigor, and technical execution—from market research studies informing pricing strategy to AI-powered workflow automation.",
     "about": "",
     "contact": ""
   },
   "about": {
-    "intro": "Data-driven professional with a proven ability to transform complex datasets into strategic business advantages. Currently advancing my expertise through a Master of Science in Engineering/Business Management at George Washington University while delivering measurable impact as a Student Program Coordinator. Based in Alexandria, VA, I combine deep technical proficiency with business acumen to solve challenging analytical problems.",
-    "background": "Four years of progressive experience at Hewlett Packard Enterprises, complemented by rigorous graduate training in data science, analytics, and engineering management, has positioned me at the intersection of technical execution and strategic thinking—where data becomes the catalyst for organizational transformation.",
-    "professionalBackground": "My analytical foundation was built through a Bachelor's degree in Computer and Information Science from Dayananda Sagar College of Engineering. At Hewlett Packard Enterprises, I advanced rapidly from Software Designer I to II, consistently exceeding expectations: reducing query execution time by 47%, slashing manual reporting by 8 hours weekly, and ultimately delivering a 60% leap in operational efficiency through innovative analytics frameworks. My current role at George Washington School of Business extends this impact trajectory—automating critical processes with Qualtrics and Excel VBA, and deploying data-driven engagement strategies that have amplified participation by 30% and attendance by 45%.",
-    "careerObjectives": "Seeking high-impact Data Analyst opportunities where advanced proficiency in SQL, Python, R, and enterprise BI platforms can drive strategic initiatives. I thrive in environments that value analytical rigor, where my expertise in statistical modeling, data visualization, and process optimization can directly influence business outcomes and competitive advantage.",
+    "intro": "Product-minded professional with a proven ability to translate user needs into technical solutions that deliver business value. Currently completing my Master's in Engineering/Business Management at George Washington University while driving student engagement programs that have increased participation by 30% and attendance by 45%.",
+    "background": "I spent four years at Hewlett Packard Enterprises building analytics platforms, optimizing data pipelines, and working with product teams to ship features that moved business metrics. My graduate work combines technical depth (Python, SQL, R) with business strategy (product management, marketing analytics, decision science)—positioning me at the intersection where data meets product.",
+    "professionalBackground": "At HPE, I advanced from Software Designer I to II by consistently delivering impact: I reduced query time by 47%, eliminated 8 hours of manual reporting weekly, and developed a POC that validated 30% performance improvements and secured executive buy-in for full-scale implementation. My current role extends this track record—I launched a 0-to-1 coaching program for 25+ student leaders, automated nomination processes with VBA, and drove 45% attendance growth through data-informed marketing strategies.",
+    "careerObjectives": "Seeking Product Manager, Business Systems Analyst, Data Analyst, or Project Manager roles where I can apply my technical background and product thinking to solve real business problems. I thrive in environments that value analytical rigor, user research, and cross-functional collaboration.",
     "interests": [
-      "Advanced Analytics: Deploying statistical analysis, predictive modeling, and machine learning techniques to extract actionable patterns from complex datasets",
-      "Data Visualization & Storytelling: Crafting compelling narratives through Power BI, Tableau, and Qlik that translate technical findings into executive insights",
-      "Process Optimization: Applying analytical frameworks to diagnose inefficiencies and architect solutions that yield measurable performance gains",
-      "Product Analytics: Establishing KPI tracking systems and behavioral analysis pipelines that drive product-market fit and user engagement",
-      "Big Data Engineering: Architecting scalable solutions across cloud platforms (AWS, Azure) and distributed systems (HDFS, NoSQL) to harness enterprise-scale data"
+      "Product Management: Building 0-to-1 products, conducting user research, prioritizing roadmaps, and shipping features that users actually want",
+      "Data Analytics: Using SQL, Python, and R to uncover insights, build dashboards, and inform strategic decisions",
+      "Business Systems Analysis: Gathering requirements, documenting processes, identifying gaps, and translating business needs into technical specifications",
+      "AI & Automation: Leveraging AI tools (Claude, n8n) to build intelligent workflows and solve problems faster",
+      "Process Improvement: Finding inefficiencies, designing solutions, and delivering measurable efficiency gains"
     ]
   },
   "education": [
@@ -36,21 +36,21 @@
       "period": "Jan 2024 - Dec 2025",
       "gpa": "3.88",
       "coursework": [
+        "Product Management",
         "Program and Project Management",
-        "Engineering Economics",
-        "Decision Making with Uncertainty",
-        "Marketing Analytics for Design Decisions",
-        "Programming for Analytics with Python",
-        "Introduction to Data Science with R",
-        "Database Management Systems (AWS)"
+        "Marketing Analytics for Design Decisions (R)",
+        "Programming for Analytics (Python)",
+        "Introduction to Data Science (R)",
+        "Database Management Systems (AWS)",
+        "Design Thinking"
       ],
       "skills": [
-        "Data analysis and visualization",
-        "Project and program management",
-        "Statistical analysis and decision making",
+        "Product strategy and roadmap planning",
+        "Data analysis and statistical modeling",
+        "Project management methodologies",
         "Python and R programming",
-        "Database management",
-        "Marketing analytics"
+        "Database design and SQL",
+        "User research and design thinking"
       ]
     },
     {
@@ -58,27 +58,28 @@
       "institution": "Dayananda Sagar College of Engineering",
       "location": "Bengaluru, India",
       "period": "Aug 2015 - May 2019",
-      "gpa": "8.98",
+      "gpa": "8.98/10",
       "coursework": [
-        "Computer Science Fundamentals",
         "Data Structures and Algorithms",
         "Database Systems",
         "Software Engineering",
-        "Information Systems"
+        "Computer Networks",
+        "Operating Systems"
       ],
       "skills": [
-        "Software development",
-        "Technical problem-solving",
         "Programming fundamentals",
+        "Software development",
         "Systems design",
-        "Technical documentation"
+        "Technical problem-solving",
+        "Algorithm design"
       ]
     }
   ],
   "professionalDevelopment": [
-    "Continuing education in project management methodologies",
-    "Professional workshops on leadership and team management",
-    "Technical seminars related to emerging technologies"
+    "Leadership Foundations: Leadership Styles and Models (LinkedIn Learning)",
+    "Product Management First Steps (LinkedIn Learning)",
+    "Becoming a Product Manager: A Complete Guide (LinkedIn Learning)",
+    "Generative AI for Product Managers (LinkedIn Learning)"
   ],
   "experience": [
     {
@@ -88,17 +89,17 @@
       "period": "Jan 2025 - Present",
       "logo": "GWU",
       "responsibilities": [
-        "Architect and execute high-impact student engagement initiatives including networking events, leadership development sessions, and career advancement programs—driving a 30% surge in student participation through data-informed programming strategies",
-        "Engineer automated nominee anonymization workflow using Qualtrics and Excel VBA for the Student Leadership Awards ceremony, eliminating selection bias while reducing manual processing time by 75%",
-        "Orchestrate seamless stakeholder communication across students, faculty, and administration, establishing streamlined project management frameworks that accelerate event planning cycles and enhance program delivery quality",
-        "Develop integrated marketing campaigns leveraging Canvas, email automation, and social media analytics to amplify program visibility—achieving a 45% increase in attendance through targeted outreach and A/B testing methodologies",
-        "Design and deliver comprehensive leadership coaching curriculum for 25+ student organization leaders, implementing evidence-based management frameworks that measurably improved team coordination and event execution effectiveness"
+        "Drove product strategy for student engagement programs through user research (surveys, 1:1 interviews with 50+ students) and feedback analysis, identifying unmet needs that improved participation by 30%",
+        "Launched 0-to-1 coaching product after identifying gap through stakeholder interviews with 25+ student leaders; defined MVP features (conflict resolution, event planning templates), delivered in 8-week sprint cycle",
+        "Owned go-to-market strategy for signature events, defining target user segments, crafting messaging aligned with student needs, and iterating based on engagement metrics—increased attendance 45%",
+        "Automated nominee anonymization process using Qualtrics and Excel VBA for Student Leadership Awards, eliminating bias and reducing manual work",
+        "Led Agile project management practices—daily standups, bi-weekly sprint reviews, and clear task breakdowns to keep projects on schedule"
       ],
       "achievements": [
-        "Catalyzed 30% increase in student engagement through strategic program redesign and data-driven planning",
-        "Achieved 45% attendance growth via integrated multi-channel marketing strategy and audience analytics",
-        "Engineered VBA automation solution eliminating bias and reducing award ceremony processing time by 75%",
-        "Successfully mentored 25+ student leaders, delivering measurable improvements in organizational effectiveness"
+        "30% increase in student participation through data-driven program design",
+        "45% attendance growth via targeted go-to-market strategy",
+        "Launched coaching program from 0-to-1 serving 25+ leaders",
+        "Automated critical workflows saving hours of manual processing"
       ]
     },
     {
@@ -108,17 +109,17 @@
       "period": "Mar 2023 - Nov 2023",
       "logo": "HPE",
       "responsibilities": [
-        "Drove product strategy in partnership with senior product owners, engineering a 15% reduction in quote processing time by aligning technical architecture with strategic business objectives and optimizing data flow patterns",
-        "Architected enterprise-scale process framework handling large-scale data ingestion pipelines, delivering a 35% efficiency gain through advanced data management techniques, optimized ETL processes, and statistical analysis methodologies",
-        "Translated complex user requirements into robust technical specifications, integrating cutting-edge analytics tools and establishing performance monitoring systems that generated a dramatic 60% improvement in operational efficiency—directly impacting bottom-line profitability",
-        "Led end-to-end development of analytics tool Proof of Concept, leveraging iterative testing protocols and user feedback loops to optimize product performance—achieving 30% increase in processing capabilities while defining strategic product roadmap",
-        "Directed cross-functional Agile/Scrum teams through complete product lifecycle, from user story definition to production deployment for supply chain optimization initiatives—utilizing PowerBI dashboards to visualize complex data relationships and showcase measurable process improvements"
+        "Led product strategy initiative analyzing user pain points through customer feedback and usage analytics; prioritized roadmap to reduce quote processing time 15%, directly impacting revenue cycle",
+        "Owned end-to-end POC product development (requirements gathering → MVP definition → stakeholder reviews → iteration); incorporated user feedback across 4 sprint cycles, validated 30% performance improvement, securing executive buy-in",
+        "Enhanced product scalability by designing a process framework for large-scale data ingestion and analytics, increasing operational efficiency by 35%",
+        "Conducted competitive landscape analysis for analytics tooling, evaluated 5 vendor solutions against internal requirements, presented findings to product leadership influencing build vs. buy decision",
+        "Drove cross-functional alignment across engineering, product, and operations to deliver key features from concept to deployment in Agile sprints"
       ],
       "achievements": [
-        "Delivered 15% reduction in quote processing time, directly accelerating revenue recognition cycles",
-        "Achieved breakthrough 60% operational efficiency improvement through advanced analytics architecture",
-        "Engineered process framework yielding 35% efficiency gains across enterprise data pipelines",
-        "Expanded system processing capabilities by 30% through innovative POC development and optimization"
+        "15% reduction in quote processing time through product strategy alignment",
+        "30% performance improvement validated through POC development",
+        "35% efficiency gain via scalable data framework design",
+        "Influenced major build vs. buy decision through competitive analysis"
       ]
     },
     {
@@ -128,15 +129,16 @@
       "period": "Feb 2019 - Mar 2023",
       "logo": "HPE",
       "responsibilities": [
-        "Architected and maintained enterprise dashboard ecosystem monitoring critical product KPIs, eliminating 8 hours of manual reporting weekly (400+ annual hours saved) while reducing operational waste by 20%—leveraging PowerBI's advanced visualization capabilities to transform raw data into executive-ready insights",
-        "Engineered high-performance SQL queries and optimized Qlik data models, achieving a remarkable 47% reduction in query execution time—dramatically improving KPI tracking efficiency through advanced indexing strategies, query plan optimization, and statistical analysis methodologies",
-        "Functioned as analytical liaison across engineering, product, and sales organizations, implementing data-driven process improvements that boosted system efficiency by 40%—identifying enhancement opportunities through systematic analysis of operational bottlenecks and performance metrics"
+        "Partnered with product team to define success metrics and built automated KPI dashboards that became single source of truth for product performance, eliminating 8 hours/week manual reporting and surfacing insights that reduced operational waste 20%",
+        "Improved performance visibility and KPI accuracy by optimizing backend data pipelines using SQL and Snowflake, reducing query time by 47%",
+        "Collaborated with engineering, product, and sales teams to identify bottlenecks and implement process improvements that increased system efficiency by 40%",
+        "Built and maintained dashboards using Power BI and SQL to monitor key product and operational metrics"
       ],
       "achievements": [
-        "Eliminated 400+ annual hours of manual work, reducing reporting time by 8 hours weekly and operational waste by 20%",
-        "Engineered 47% query performance improvement through strategic SQL and Qlik optimization",
-        "Drove 40% system efficiency gain by deploying cross-functional data analysis and process improvements",
-        "Established KPI tracking frameworks that became department-wide standard for performance monitoring"
+        "47% reduction in query execution time through SQL optimization",
+        "8 hours per week manual reporting eliminated via automation",
+        "20% operational waste reduction through data-driven insights",
+        "40% system efficiency improvement through cross-team collaboration"
       ]
     },
     {
@@ -146,165 +148,156 @@
       "period": "Jun 2018 - Aug 2018",
       "logo": "Intern",
       "responsibilities": [
-        "Executed comprehensive user research initiative, translating qualitative feedback into actionable UI/UX enhancements that generated a 60% improvement in user satisfaction scores—demonstrating early proficiency in user-centered design methodology",
-        "Designed and deployed sophisticated Tableau dashboard for SaaS platform, establishing real-time tracking of customer behavior patterns, engagement metrics, and critical KPIs—analytics infrastructure directly contributed to 30% increase in customer retention rates"
+        "Conducted user research (interviews, surveys) and implemented UI/UX improvements, increasing user satisfaction by 60%",
+        "Designed and developed a Tableau dashboard for a SaaS company, tracking customer behavior patterns and KPIs, contributing to a 30% increase in retention rates"
       ],
       "achievements": [
-        "Delivered 60% user satisfaction improvement through data-informed UI/UX optimization",
-        "Built analytics dashboard that drove 30% retention rate increase through behavioral insights and KPI tracking"
+        "60% user satisfaction improvement through research-driven UX enhancements",
+        "30% retention increase via analytics dashboard implementation"
       ]
     }
   ],
   "skills": {
     "technical": [
       {
-        "name": "Data Analysis & Statistics",
-        "description": "Advanced statistical modeling, hypothesis testing, predictive analytics, and big data analysis—transforming complex datasets into strategic business intelligence",
-        "level": "expert"
-      },
-      {
-        "name": "Programming & Scripting",
-        "description": "Python (Pandas, NumPy, Scikit-learn), R (statistical analysis), SQL (complex queries, optimization), HQL—building robust analytical pipelines and automation frameworks",
+        "name": "Product Management",
+        "description": "Product strategy & roadmap, user research & discovery, feature prioritization, cross-functional leadership, product analytics & KPIs, Agile/Scrum methodologies",
         "level": "advanced"
       },
       {
-        "name": "Business Intelligence Platforms",
-        "description": "Power BI, Tableau, Qlik—architecting interactive dashboards and executive reporting solutions that translate data complexity into actionable insights",
+        "name": "Data Analysis",
+        "description": "SQL (complex queries, optimization), Python (Pandas, NumPy), R (statistical analysis), data visualization, ETL processes, KPI development",
         "level": "expert"
       },
       {
-        "name": "Database & Data Warehousing",
-        "description": "SAP HANA, Vertica, HDFS, NoSQL, MySQL, AWS RDS—designing scalable data architectures and optimizing query performance across enterprise systems",
+        "name": "Business Intelligence Tools",
+        "description": "Power BI, Tableau, Qlik—building dashboards, automated reports, and data visualization solutions that drive decision-making",
+        "level": "expert"
+      },
+      {
+        "name": "Databases & Cloud",
+        "description": "MySQL, SAP HANA, Vertica, HDFS, NoSQL, Snowflake, AWS, Azure—designing data architectures and optimizing performance",
         "level": "advanced"
       },
       {
-        "name": "Advanced Excel & Automation",
-        "description": "VBA macro development, advanced formulas (VLOOKUP, INDEX-MATCH), pivot tables, Power Query—automating complex workflows and building sophisticated analytical models",
-        "level": "expert"
+        "name": "Programming & Automation",
+        "description": "Python, R, SQL, Advanced Excel (VBA, VLOOKUP, Power Query)—building analytical pipelines and automating workflows",
+        "level": "advanced"
       },
       {
-        "name": "Cloud & Distributed Systems",
-        "description": "AWS (RDS, S3, Redshift), Azure (Data Factory, Synapse)—implementing cloud-native analytics solutions and managing distributed data infrastructures",
+        "name": "AI Tools",
+        "description": "Claude API, n8n workflow automation, LLM-based semantic analysis—building intelligent systems and AI-powered workflows",
         "level": "intermediate"
       }
     ],
     "management": [
       {
-        "name": "Product Strategy & Lifecycle",
-        "description": "Aligning product vision with business strategy, defining roadmaps, and managing end-to-end lifecycle—translating market insights into competitive advantage",
+        "name": "Agile/Scrum",
+        "description": "Sprint planning, user stories, backlog prioritization, daily standups, retrospectives, cross-functional team collaboration",
         "level": "advanced"
       },
       {
-        "name": "Agile/Scrum Leadership",
-        "description": "Facilitating sprint planning, crafting user stories, leading cross-functional teams, and driving iterative delivery—ensuring rapid value creation and continuous improvement",
+        "name": "Project Management",
+        "description": "Project planning & execution, stakeholder management, risk management, timeline & budget tracking, RACI matrices",
         "level": "advanced"
       },
       {
-        "name": "Project & Program Management",
-        "description": "Orchestrating complex technical initiatives from conception to delivery—balancing scope, timeline, and resources while maintaining stakeholder alignment",
-        "level": "expert"
-      },
-      {
-        "name": "Process Optimization & Reengineering",
-        "description": "Identifying operational bottlenecks, architecting workflow improvements, and implementing solutions that deliver measurable efficiency gains and cost reductions",
+        "name": "Business Systems Analysis",
+        "description": "Requirements gathering, process modeling, gap analysis, documentation, stakeholder interviews, UAT coordination",
         "level": "advanced"
       },
       {
-        "name": "Stakeholder Engagement",
-        "description": "Building consensus across technical and business teams, managing expectations, and translating complex analytics into executive communications",
+        "name": "User Research",
+        "description": "Conducting interviews and surveys, synthesizing feedback, identifying user needs, UI/UX optimization",
         "level": "advanced"
-      },
-      {
-        "name": "Analytics-Driven Strategy",
-        "description": "Leveraging data science and business intelligence to inform strategic decisions, optimize performance, and quantify impact—where analytics meets business outcomes",
-        "level": "expert"
       }
     ],
     "soft": [
       {
-        "name": "Technical Communication & Storytelling",
-        "description": "Translating complex analytical findings into compelling narratives for executive, technical, and business audiences—bridging the gap between data and decision-making",
-        "level": "expert"
-      },
-      {
-        "name": "Analytical Problem Solving",
-        "description": "Deconstructing complex business challenges, synthesizing data from multiple sources, and architecting innovative, evidence-based solutions with measurable impact",
-        "level": "expert"
-      },
-      {
-        "name": "Leadership & Mentorship",
-        "description": "Inspiring teams, coaching emerging talent, orchestrating high-impact programs, and fostering collaborative environments that drive excellence and innovation",
+        "name": "Strategic Thinking",
+        "description": "Connecting business goals to technical execution, making data-informed decisions, identifying opportunities for improvement",
         "level": "advanced"
       },
       {
-        "name": "User-Centered Design & Research",
-        "description": "Conducting qualitative and quantitative user research, synthesizing feedback into actionable insights, and optimizing product experiences for enhanced usability and satisfaction",
+        "name": "Communication",
+        "description": "Translating technical concepts for non-technical audiences, presenting to stakeholders, writing clear documentation",
+        "level": "expert"
+      },
+      {
+        "name": "Problem Solving",
+        "description": "Breaking down complex problems, analyzing root causes, designing practical solutions with measurable impact",
+        "level": "expert"
+      },
+      {
+        "name": "Leadership",
+        "description": "Coaching and mentoring, facilitating alignment, driving consensus, building high-performing teams",
         "level": "advanced"
       }
     ],
     "tools": [
       {
-        "name": "Agile Project Management",
-        "description": "Jira—configuring workflows, managing sprints, tracking velocity metrics, and facilitating cross-functional collaboration in enterprise Agile environments",
+        "name": "Project Management",
+        "description": "Jira, Asana, MS Project, Confluence, Trello—managing sprints, tracking progress, coordinating teams",
         "level": "advanced"
       },
       {
-        "name": "Business Intelligence Suite",
-        "description": "Power BI, Tableau, Qlik—developing interactive dashboards, implementing DAX calculations, and creating executive reporting frameworks that drive strategic decisions",
+        "name": "Analytics Platforms",
+        "description": "Power BI, Tableau, Qlik, Google Analytics—creating dashboards, visualizing data, tracking KPIs",
         "level": "expert"
       },
       {
-        "name": "Survey & Process Automation",
-        "description": "Qualtrics (survey design, data collection), Excel VBA (macro development, workflow automation)—building end-to-end automated solutions for data gathering and processing",
+        "name": "Collaboration Tools",
+        "description": "Microsoft 365 (Teams, SharePoint, Outlook), Slack, Qualtrics—facilitating communication and knowledge sharing",
         "level": "advanced"
       },
       {
-        "name": "Microsoft Office Ecosystem",
-        "description": "Advanced Excel (Power Query, Power Pivot, complex formulas), PowerPoint (executive presentations), Word (technical documentation)—leveraging full suite for analytical and communication excellence",
-        "level": "expert"
+        "name": "Development Tools",
+        "description": "Git/GitHub, VS Code, Jupyter Notebooks—version control, code development, data analysis workflows",
+        "level": "intermediate"
       }
     ]
   },
   "projects": [
     {
-      "title": "Supply Chain Network Optimization",
+      "title": "Mobile AI Functionality Market Research",
       "type": "Academic Project | GWU",
-      "description": "Led cross-functional team of 4 through comprehensive analysis and optimization of simulated supply chain network. Developed advanced analytical models leveraging operations research techniques to optimize inventory management and distribution logistics—delivering theoretical 15% operational cost reduction through data-driven decision frameworks and strategic resource allocation.",
-      "skills": ["Advanced Analytics", "Operations Research", "Team Leadership", "Systems Engineering"],
-      "date": "Spring 2024"
+      "description": "Led market research study (n=200 consumers) analyzing willingness-to-pay for mobile AI features. Applied conjoint analysis to quantify price elasticity and feature preferences. Delivered pricing recommendation ($9.99/month optimal tier) and feature roadmap adopted by project stakeholders for go-to-market planning.",
+      "skills": ["Product Management", "Market Research", "Statistical Analysis", "Pricing Strategy"],
+      "date": "Fall 2024",
+      "link": "https://madd.seas.gwu.edu/showcase/2024-Fall/mobile-ai.html"
     },
     {
-      "title": "Enterprise Documentation Management System",
-      "type": "Professional Project | HPE",
-      "description": "Orchestrated cross-team implementation of centralized technical documentation platform, transforming information accessibility and version control across multiple engineering departments. Conducted comprehensive stakeholder analysis, gathered technical requirements, and managed change management process—establishing scalable knowledge management infrastructure that became organizational standard.",
-      "skills": ["Project Leadership", "Requirements Engineering", "Change Management", "Stakeholder Alignment"],
-      "date": "2022"
+      "title": "Agentic AI Job Search Optimizer",
+      "type": "Personal Project",
+      "description": "Architected an agentic AI workflow using n8n, Claude API, and Python to autonomously aggregate job listings and perform semantic matching against my resume. Implemented conditional logic, API integrations, and data parsing to filter 1,000+ listings down to high-fit opportunities, optimizing the search process by eliminating noise.",
+      "skills": ["AI/ML", "Workflow Automation", "Python", "API Integration"],
+      "date": "Jan 2026"
     },
     {
-      "title": "Engineering Workflow Automation Initiative",
-      "type": "Professional Project | HPE",
-      "description": "Contributed to high-impact automation initiative that eliminated 25+ hours of manual work weekly across engineering department. Conducted systematic workflow analysis to identify inefficiencies, architected technical solutions, and implemented automated processes—delivering measurable productivity gains while establishing framework for continuous process improvement.",
-      "skills": ["Process Mining", "Automation Architecture", "Efficiency Analysis", "Quality Engineering"],
-      "date": "2021"
-    },
-    {
-      "title": "Quantitative Risk Management Framework",
+      "title": "Cobalt Supply Chain Sustainability Analysis",
       "type": "Academic Project | GWU",
-      "description": "Architected comprehensive risk assessment and management framework integrating quantitative modeling (Monte Carlo simulation, decision trees) with qualitative analysis methodologies. Developed practical toolkit enabling project managers to identify, quantify, and mitigate risks proactively—bridging theoretical risk management with actionable implementation strategies for technical projects.",
-      "skills": ["Quantitative Risk Analysis", "Project Management", "Decision Science", "Framework Architecture"],
-      "date": "Fall 2023"
+      "description": "Led analysis of the cradle-to-gate cobalt supply chain, coordinating scenario modeling and risk assessments. Built a decision-support dashboard in Tableau to communicate cost, emission, and supply-risk insights to stakeholders. Applied quantitative methods to identify optimization opportunities in critical mineral pathways.",
+      "skills": ["Data Analysis", "Supply Chain", "Tableau", "Sustainability"],
+      "date": "Fall 2024"
+    },
+    {
+      "title": "Analytics Platform POC",
+      "type": "Professional Project | HPE",
+      "description": "Owned end-to-end POC development for analytics platform: gathered requirements from stakeholders, defined MVP scope, conducted sprint planning, integrated advanced analytics tools, and delivered performance testing results. Validated 30% processing capability increase, securing executive buy-in for $500K+ production rollout.",
+      "skills": ["Product Management", "Requirements Analysis", "POC Development", "Stakeholder Management"],
+      "date": "2023"
     }
   ],
   "contact": {
-    "intro": "Open to exploring high-impact data analyst opportunities, strategic collaborations, and professional networking with analytics leaders. Let's connect and discuss how data-driven insights can create competitive advantage for your organization.",
-    "availability": "Currently completing MS in Engineering/Business Management at George Washington University (December 2025 graduation). Actively seeking opportunities in:",
+    "intro": "I'm actively seeking Product Manager, Business Systems Analyst, Data Analyst, and Project Manager opportunities where I can apply my technical background and product thinking to solve real business problems.",
+    "availability": "Graduating from George Washington University in December 2025. Open to full-time roles starting early 2026, as well as contract/consulting opportunities.",
     "availabilityOptions": [
-      "Full-time Data Analyst positions beginning early 2026—bringing 4+ years of proven analytics expertise",
-      "Contract or consulting engagements in data analysis, business intelligence, and process optimization",
-      "Professional networking with data science, analytics, and business intelligence communities",
-      "Collaborative research initiatives or analytics projects leveraging advanced statistical methods"
+      "Product Manager roles (Associate/Entry-Mid Level) - Building products, conducting user research, defining roadmaps",
+      "Business Systems Analyst positions - Gathering requirements, documenting processes, bridging business and technical teams",
+      "Data Analyst opportunities - SQL, Python, dashboards, analytics, insights that drive decisions",
+      "Project Manager roles - Agile/Scrum, stakeholder management, delivery execution"
     ],
-    "responseTime": "Committed to prompt communication—typically responding within 24-48 hours. For time-sensitive opportunities, please indicate urgency in your subject line."
+    "responseTime": "I typically respond within 24-48 hours. For urgent opportunities, please mention it in your subject line."
   },
   "social": {
     "email": "vidyullatha1997@gmail.com",
@@ -313,6 +306,6 @@
     "instagram": "https://instagram.com/vidyullathaks"
   },
   "footer": {
-    "copyright": "© 2024 Vidyullatha KS. All rights reserved."
+    "copyright": "© 2025 Vidyullatha KS. All rights reserved."
   }
 }
