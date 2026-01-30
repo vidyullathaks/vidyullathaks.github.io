@@ -90,11 +90,11 @@
 	}
 
 	:global(.hero-glass-box) {
-		padding: 0;
+		padding: 2.5rem;
 		margin: 0;
 		width: 100%;
 		max-width: 100%;
-		height: 500px;
+		min-height: 400px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -141,6 +141,7 @@
 		margin-left: 60px;
 		display: flex;
 		justify-content: center;
+		flex-shrink: 0;
 	}
 
 	.profile-photo {
@@ -167,8 +168,8 @@
 		}
 
 		:global(.hero-glass-box) {
-			padding: 0;
-			height: 450px;
+			padding: 2rem;
+			min-height: 350px;
 		}
 
 		.text-content {
@@ -236,8 +237,8 @@
 		}
 
 		:global(.hero-glass-box) {
-			height: auto;
-			padding: 3rem 2rem;
+			min-height: auto;
+			padding: 2.5rem 2rem;
 		}
 	}
 </style>
