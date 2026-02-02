@@ -66,6 +66,8 @@ export interface Project {
   description: string;
   skills: string[];
   date: string;
+  link?: string;
+  github?: string;
 }
 
 export interface Contact {
