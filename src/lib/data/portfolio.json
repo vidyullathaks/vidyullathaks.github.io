@@ -275,6 +275,14 @@
       "date": "Jan 2026"
     },
     {
+      "title": "NYC Motor Vehicle Crash Severity Analysis",
+      "type": "Academic Project | GWU",
+      "description": "Built predictive models on ~100K NYC motor vehicle crash records to classify high-severity incidents (fatalities or multiple injuries). Engineered temporal and victim-related features, then evaluated Logistic Regression, Random Forest, and Gradient Boosting with SMOTE resampling. Logistic Regression achieved the best recall-ROC AUC balance, revealing that late-night hours-not rush periods-drove the most severe crashes.",
+      "skills": ["Machine Learning", "Python", "Feature Engineering", "Data Analysis"],
+      "date": "Fall 2025",
+      "github": "https://github.com/vidyullathaks/NYC-Motor-Vehicle-Crash-Severity-Analysis"
+    },
+    {
       "title": "Cobalt Supply Chain Sustainability Analysis",
       "type": "Academic Project | GWU",
       "description": "Led analysis of the cradle-to-gate cobalt supply chain, coordinating scenario modeling and risk assessments. Built a decision-support dashboard in Tableau to communicate cost, emission, and supply-risk insights to stakeholders. Applied quantitative methods to identify optimization opportunities in critical mineral pathways.",
