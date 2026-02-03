@@ -11,20 +11,20 @@
     "skills": "Combining technical expertise in data analytics, product management, and software development with strategic business acumen to deliver solutions that drive measurable results.",
     "experience": "Progressive career trajectory from Software Designer to Product Manager, consistently delivering quantifiable impact: 47% faster queries, 35% efficiency gains, 45% engagement growth, and products adopted by hundreds of users.",
     "education": "",
-    "projects": "End-to-end projects demonstrating product thinking, analytical rigor, and technical execution-from market research studies informing pricing strategy to AI-powered workflow automation.",
+    "projects": "End-to-end projects demonstrating product thinking, analytical rigor, and technical execution-from full-stack AI applications that transform how product teams work to market research studies informing pricing strategy.",
     "about": "",
     "contact": ""
   },
   "about": {
-    "intro": "Product-minded professional with a proven ability to translate user needs into technical solutions that deliver business value. Currently completing my Master's in Engineering/Business Management at George Washington University while driving student engagement programs that have increased participation by 30% and attendance by 45%.",
+    "intro": "Product-minded professional with a proven ability to translate user needs into technical solutions that deliver business value. Recently completed my Master's in Engineering/Business Management at George Washington University, where I drove student engagement programs (30% participation increase, 45% attendance growth) and built AI-powered tools that solve real product problems.",
     "background": "I spent four years at Hewlett Packard Enterprises building analytics platforms, optimizing data pipelines, and working with product teams to ship features that moved business metrics. My graduate work combines technical depth (Python, SQL, R) with business strategy (product management, marketing analytics, decision science)-positioning me at the intersection where data meets product.",
     "professionalBackground": "At HPE, I advanced from Software Designer I to II by consistently delivering impact: I reduced query time by 47%, eliminated 8 hours of manual reporting weekly, and developed a POC that validated 30% performance improvements and secured executive buy-in for full-scale implementation. My current role extends this track record-I launched a 0-to-1 coaching program for 25+ student leaders, automated nomination processes with VBA, and drove 45% attendance growth through data-informed marketing strategies.",
     "careerObjectives": "Seeking Product Manager, Business Systems Analyst, Data Analyst, or Project Manager roles where I can apply my technical background and product thinking to solve real business problems. I thrive in environments that value analytical rigor, user research, and cross-functional collaboration.",
     "interests": [
+      "AI Product Development: Building full-stack AI applications (IdeaForge PRD Generator, job search optimizer) using LLM APIs, prompt engineering, and workflow automation to solve real problems",
       "Product Management: Building 0-to-1 products, conducting user research, prioritizing roadmaps, and shipping features that users actually want",
       "Data Analytics: Using SQL, Python, and R to uncover insights, build dashboards, and inform strategic decisions",
       "Business Systems Analysis: Gathering requirements, documenting processes, identifying gaps, and translating business needs into technical specifications",
-      "AI & Automation: Leveraging AI tools (Claude, n8n) to build intelligent workflows and solve problems faster",
       "Process Improvement: Finding inefficiencies, designing solutions, and delivering measurable efficiency gains"
     ]
   },
@@ -185,9 +185,9 @@
         "level": "advanced"
       },
       {
-        "name": "AI Tools",
-        "description": "Claude API, n8n workflow automation, LLM-based semantic analysis-building intelligent systems and AI-powered workflows",
-        "level": "intermediate"
+        "name": "AI Tools & LLMs",
+        "description": "OpenAI API, Claude API, prompt engineering, n8n workflow automation, LLM integration-building full-stack AI applications and intelligent workflows",
+        "level": "advanced"
       }
     ],
     "management": [
@@ -259,13 +259,12 @@
   },
   "projects": [
     {
-      "title": "Mobile AI Functionality Market Research",
-      "type": "Academic Project | GWU",
-      "description": "Led market research study (n=200 consumers) analyzing willingness-to-pay for mobile AI features. Applied conjoint analysis to quantify price elasticity and feature preferences. Delivered pricing recommendation ($9.99/month optimal tier) and feature roadmap adopted by project stakeholders for go-to-market planning.",
-      "skills": ["Product Management", "Market Research", "Statistical Analysis", "Pricing Strategy"],
-      "date": "Fall 2024",
-      "link": "https://madd.seas.gwu.edu/showcase/2024-Fall/mobile-ai.html",
-      "github": "https://github.com/vidyullathaks/Mobile-AI-Functionality"
+      "title": "IdeaForge - AI PRD Generator",
+      "type": "Personal Project",
+      "description": "Built a full-stack AI application that transforms product ideas into structured Product Requirements Documents in seconds. Integrated OpenAI LLM with refined prompts to generate senior-level PRDs including problem statements, user stories, and acceptance criteria. Features a saved library, real-time rendering, and example templates for quick starts.",
+      "skills": ["Full-Stack Development", "React", "TypeScript", "OpenAI API", "Product Management"],
+      "date": "Feb 2026",
+      "github": "https://github.com/vidyullathaks/idea-to-docs"
     },
     {
       "title": "Agentic AI Job Search Optimizer",
@@ -273,6 +272,15 @@
       "description": "Architected an agentic AI workflow using n8n, Claude API, and Python to autonomously aggregate job listings and perform semantic matching against my resume. Implemented conditional logic, API integrations, and data parsing to filter 1,000+ listings down to high-fit opportunities, optimizing the search process by eliminating noise.",
       "skills": ["AI/ML", "Workflow Automation", "Python", "API Integration"],
       "date": "Jan 2026"
+    },
+    {
+      "title": "Mobile AI Functionality Market Research",
+      "type": "Academic Project | GWU",
+      "description": "Led market research study (n=200 consumers) analyzing willingness-to-pay for mobile AI features. Applied conjoint analysis to quantify price elasticity and feature preferences. Delivered pricing recommendation ($9.99/month optimal tier) and feature roadmap adopted by project stakeholders for go-to-market planning.",
+      "skills": ["Product Management", "Market Research", "Statistical Analysis", "Pricing Strategy"],
+      "date": "Fall 2024",
+      "link": "https://madd.seas.gwu.edu/showcase/2024-Fall/mobile-ai.html",
+      "github": "https://github.com/vidyullathaks/Mobile-AI-Functionality"
     },
     {
       "title": "NYC Motor Vehicle Crash Severity Analysis",
@@ -300,7 +308,7 @@
   ],
   "contact": {
     "intro": "I'm actively seeking Product Manager, Business Systems Analyst, Data Analyst, and Project Manager opportunities where I can apply my technical background and product thinking to solve real business problems.",
-    "availability": "Graduating from George Washington University in December 2025. Open to full-time roles starting early 2026, as well as contract/consulting opportunities.",
+    "availability": "Recently graduated with an MS in Engineering/Business Management from George Washington University. Open to full-time roles immediately, as well as contract/consulting opportunities.",
     "availabilityOptions": [
       "Product Manager roles (Associate/Entry-Mid Level) - Building products, conducting user research, defining roadmaps",
       "Business Systems Analyst positions - Gathering requirements, documenting processes, bridging business and technical teams",
@@ -316,6 +324,6 @@
     "instagram": "https://instagram.com/vidyullathaks"
   },
   "footer": {
-    "copyright": "© 2025 Vidyullatha KS. All rights reserved."
+    "copyright": "© 2026 Vidyullatha KS. All rights reserved."
   }
 }
