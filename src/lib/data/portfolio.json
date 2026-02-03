@@ -275,6 +275,14 @@
       "date": "Jan 2026"
     },
     {
+      "title": "IdeaForge - AI PRD Generator",
+      "type": "Personal Project",
+      "description": "Built a full-stack AI application that transforms product ideas into structured Product Requirements Documents in seconds. Integrated OpenAI LLM with refined prompts to generate senior-level PRDs including problem statements, user stories, and acceptance criteria. Features a saved library, real-time rendering, and example templates for quick starts.",
+      "skills": ["Full-Stack Development", "React", "TypeScript", "OpenAI API", "Product Management"],
+      "date": "Feb 2026",
+      "github": "https://github.com/vidyullathaks/idea-to-docs"
+    },
+    {
       "title": "NYC Motor Vehicle Crash Severity Analysis",
       "type": "Academic Project | GWU",
       "description": "Built predictive models on ~100K NYC motor vehicle crash records to classify high-severity incidents (fatalities or multiple injuries). Engineered temporal and victim-related features, then evaluated Logistic Regression, Random Forest, and Gradient Boosting with SMOTE resampling. Logistic Regression achieved the best recall-ROC AUC balance, revealing that late-night hours-not rush periods-drove the most severe crashes.",
