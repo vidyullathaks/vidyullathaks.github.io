@@ -21,7 +21,7 @@
     "professionalBackground": "At HPE, I advanced from Software Designer I to II by consistently delivering impact: I reduced query time by 47%, eliminated 8 hours of manual reporting weekly, and developed a POC that validated 30% performance improvements and secured executive buy-in for full-scale implementation. My current role extends this track record-I launched a 0-to-1 coaching program for 25+ student leaders, automated nomination processes with VBA, and drove 45% attendance growth through data-informed marketing strategies.",
     "careerObjectives": "Seeking Product Manager, Business Systems Analyst, Data Analyst, or Project Manager roles where I can apply my technical background and product thinking to solve real business problems. I thrive in environments that value analytical rigor, user research, and cross-functional collaboration.",
     "interests": [
-      "AI Product Development: Building full-stack AI applications (IdeaForge PRD Generator, job search optimizer) using LLM APIs, prompt engineering, and workflow automation to solve real problems",
+      "AI Product Development: Building full-stack AI applications (IdeaForge PM Toolkit, job search optimizer) using LLM APIs, prompt engineering, and workflow automation to solve real problems",
       "Product Management: Building 0-to-1 products, conducting user research, prioritizing roadmaps, and shipping features that users actually want",
       "Data Analytics: Using SQL, Python, and R to uncover insights, build dashboards, and inform strategic decisions",
       "Business Systems Analysis: Gathering requirements, documenting processes, identifying gaps, and translating business needs into technical specifications",
@@ -259,12 +259,13 @@
   },
   "projects": [
     {
-      "title": "IdeaForge - AI PRD Generator",
+      "title": "IdeaForge - AI Product Manager Toolkit",
       "type": "Personal Project",
-      "description": "Built a full-stack AI application that transforms product ideas into structured Product Requirements Documents in seconds. Integrated OpenAI LLM with refined prompts to generate senior-level PRDs including problem statements, user stories, and acceptance criteria. Features a saved library, real-time rendering, and example templates for quick starts.",
-      "skills": ["Full-Stack Development", "React", "TypeScript", "OpenAI API", "Product Management"],
+      "description": "Built a comprehensive AI-powered PM toolkit with 6 tools: PRD Generator, User Story Generator, Problem Refiner, Feature Prioritizer (RICE scoring), Sprint Planner, and Interview Prep. Features inline editing with AI rewrite, version history, shareable links, PDF/Markdown export, and custom templates. Full-stack app with React, TypeScript, and OpenAI — deployed and live.",
+      "skills": ["Full-Stack Development", "React", "TypeScript", "OpenAI API", "Prompt Engineering", "Product Management"],
       "date": "Feb 2026",
-      "github": "https://github.com/vidyullathaks/idea-to-docs"
+      "github": "https://github.com/vidyullathaks/idea-to-docs",
+      "link": "https://idea-to-docs.replit.app"
     },
     {
       "title": "Agentic AI Job Search Optimizer",
