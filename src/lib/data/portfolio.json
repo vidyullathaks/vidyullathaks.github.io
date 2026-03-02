@@ -76,10 +76,17 @@
     }
   ],
   "professionalDevelopment": [
-    "Leadership Foundations: Leadership Styles and Models (LinkedIn Learning)",
-    "Product Management First Steps (LinkedIn Learning)",
+    "The AI-Driven Project Manager: 10X Your Productivity with Generative AI (LinkedIn Learning)",
+    "Designing Agentic AI Products - No Code Required (LinkedIn Learning)",
+    "Agentic AI Fundamentals: Architectures, Frameworks, and Applications (LinkedIn Learning)",
+    "Generative AI for Product Managers (LinkedIn Learning)",
+    "AWS Academy Graduate - Cloud Developing (Amazon Web Services)",
+    "AWS Academy Graduate - Cloud Foundations (Amazon Web Services)",
     "Becoming a Product Manager: A Complete Guide (LinkedIn Learning)",
-    "Generative AI for Product Managers (LinkedIn Learning)"
+    "Product Management First Steps (LinkedIn Learning)",
+    "Project Management Foundations: Small Projects (LinkedIn Learning)",
+    "Inclusive Leadership (LinkedIn Learning)",
+    "Leadership Foundations: Leadership Styles and Models (LinkedIn Learning)"
   ],
   "experience": [
     {
@@ -262,7 +269,7 @@
       "title": "IdeaForge - AI Product Manager Toolkit",
       "type": "Personal Project",
       "description": "Built a comprehensive AI-powered PM toolkit with 6 tools: PRD Generator, User Story Generator, Problem Refiner, Feature Prioritizer (RICE scoring), Sprint Planner, and Interview Prep. Features inline editing with AI rewrite, version history, shareable links, PDF/Markdown export, and custom templates. Full-stack app with React, TypeScript, and OpenAI — deployed and live.",
-      "skills": ["Full-Stack Development", "React", "TypeScript", "OpenAI API", "Prompt Engineering", "Product Management"],
+      "skills": ["Full-Stack Development", "React", "TypeScript", "Node.js", "PostgreSQL", "OpenAI API", "Prompt Engineering", "Product Management"],
       "date": "Feb 2026",
       "github": "https://github.com/vidyullathaks/idea-to-docs",
       "link": "https://idea-to-docs.replit.app"
