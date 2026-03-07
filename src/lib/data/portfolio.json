@@ -268,8 +268,8 @@
     {
       "title": "IdeaForge - AI Product Manager Toolkit",
       "type": "Personal Project",
-      "description": "Built a comprehensive AI-powered PM toolkit with 6 tools: PRD Generator, User Story Generator, Problem Refiner, Feature Prioritizer (RICE scoring), Sprint Planner, and Interview Prep. Features inline editing with AI rewrite, version history, shareable links, PDF/Markdown export, and custom templates. Full-stack app with React, TypeScript, and OpenAI — deployed and live.",
-      "skills": ["Full-Stack Development", "React", "TypeScript", "Node.js", "PostgreSQL", "OpenAI API", "Prompt Engineering", "Product Management"],
+      "description": "Built a full-stack AI-powered PM toolkit with 9 specialized tools: PRD Generator, User Story Generator, Problem Refiner, Feature Prioritizer (RICE scoring), Sprint Planner, Interview Prep, User Persona Generator, Competitive Analysis, and OKR Generator. Features PRD Readiness Scoring across 6 dimensions, inline editing with AI rewrite, version history, shareable links, PDF/Markdown/Notion export, analytics dashboard, and custom templates. Supports multi-model AI (OpenAI GPT and Anthropic Claude) — deployed and live.",
+      "skills": ["Full-Stack Development", "React", "TypeScript", "Node.js", "PostgreSQL", "OpenAI API", "Anthropic Claude API", "Prompt Engineering", "Product Management"],
       "date": "Feb 2026",
       "github": "https://github.com/vidyullathaks/idea-to-docs",
       "link": "https://idea-to-docs.replit.app"
