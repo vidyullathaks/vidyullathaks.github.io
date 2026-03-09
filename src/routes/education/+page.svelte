@@ -73,8 +73,8 @@
 		</section>
 
 		<section class="certifications">
-			<h2>Professional Development</h2>
 			<GlassBox padding="1.5rem">
+				<h2>Professional Development</h2>
 				<p>In addition to formal education, I regularly pursue professional development opportunities to stay current with industry trends and enhance my skill set:</p>
 
 				<ul class="prof-dev-list">
