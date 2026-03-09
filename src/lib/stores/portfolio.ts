@@ -74,6 +74,8 @@ export interface BeyondWorkItem {
   category: string;
   description: string;
   highlight: string;
+  link?: string;
+  linkLabel?: string;
 }
 
 export interface BeyondWork {

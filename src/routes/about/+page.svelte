@@ -59,7 +59,13 @@
 						<div class="beyond-item">
 							<div class="beyond-header">
 								<h3>{item.category}</h3>
-								<span class="beyond-highlight">{item.highlight}</span>
+								<div class="beyond-header-right">
+									{#if item.link}
+										<a href={item.link} target="_blank" rel="noopener noreferrer" class="beyond-link">{item.linkLabel ?? item.highlight}</a>
+									{:else}
+										<span class="beyond-highlight">{item.highlight}</span>
+									{/if}
+								</div>
 							</div>
 							<p>{item.description}</p>
 						</div>
@@ -162,6 +168,11 @@
 		margin: 0;
 	}
 
+	.beyond-header-right {
+		display: flex;
+		align-items: center;
+	}
+
 	.beyond-highlight {
 		font-size: 0.8rem;
 		font-weight: 600;
@@ -170,6 +181,23 @@
 		background: rgba(var(--color-primary-rgb), 0.12);
 		color: var(--color-primary);
 		white-space: nowrap;
+	}
+
+	.beyond-link {
+		font-size: 0.8rem;
+		font-weight: 600;
+		padding: 0.2rem 0.65rem;
+		border-radius: 20px;
+		background: rgba(var(--color-primary-rgb), 0.12);
+		color: var(--color-primary);
+		white-space: nowrap;
+		text-decoration: none;
+		transition: background 0.2s ease, color 0.2s ease;
+	}
+
+	.beyond-link:hover {
+		background: rgba(var(--color-primary-rgb), 0.25);
+		color: var(--color-primary);
 	}
 
 	.beyond-item p {
