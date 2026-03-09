@@ -70,6 +70,19 @@ export interface Project {
   github?: string;
 }
 
+export interface BeyondWorkItem {
+  category: string;
+  description: string;
+  highlight: string;
+  link?: string;
+  linkLabel?: string;
+}
+
+export interface BeyondWork {
+  intro: string;
+  items: BeyondWorkItem[];
+}
+
 export interface Contact {
   intro: string;
   availability: string;
@@ -97,6 +110,7 @@ export interface PortfolioData {
   experience: Experience[];
   skills: Skills;
   projects: Project[];
+  beyondWork: BeyondWork;
   contact: Contact;
   social: Social;
   footer: Footer;
@@ -114,6 +128,7 @@ export const getProfessionalDevelopment = (): string[] => portfolioData.professi
 export const getExperience = (): Experience[] => portfolioData.experience;
 export const getSkills = (): Skills => portfolioData.skills;
 export const getProjects = (): Project[] => portfolioData.projects;
+export const getBeyondWork = (): BeyondWork => (portfolioData as PortfolioData).beyondWork;
 export const getContact = (): Contact => portfolioData.contact;
 export const getSocial = (): Social => portfolioData.social;
 export const getFooter = (): Footer => portfolioData.footer;

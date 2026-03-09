@@ -314,6 +314,28 @@
       "date": "2023"
     }
   ],
+  "beyondWork": {
+    "intro": "Outside of work and academics, I pursue interests that reflect the same curiosity, discipline, and passion for community that drive my professional life.",
+    "items": [
+      {
+        "category": "Carnatic Classical Music",
+        "description": "Trained Carnatic classical singer with 15 years of formal training. I've performed at concerts across South India, and one of my YouTube performances has garnered 92,000+ views.",
+        "highlight": "92K+ YouTube views",
+        "link": "https://www.youtube.com/watch?v=OU5HL7rq0ko",
+        "linkLabel": "Watch on YouTube"
+      },
+      {
+        "category": "Hiking & Adventure",
+        "description": "Avid hiker who has explored Shenandoah National Park 8+ times in the past two years. Completed the Kuari Pass trek in the Garhwal Himalayas, Uttarakhand-a high-altitude trail reaching 12,516 ft (3,815 m) with panoramic views of Nanda Devi, Kamet, Trishul, and Dronagiri peaks.",
+        "highlight": "Kuari Pass, 12,516 ft"
+      },
+      {
+        "category": "Animal Welfare & Community Organizing",
+        "description": "Core team organizer for PetFed Bengaluru-India's largest pet festival-for two consecutive years. Managed 25+ volunteers and took ownership of logistics, food coordination, vendor management, marketing, and on-ground execution.",
+        "highlight": "25+ volunteers, 2 years"
+      }
+    ]
+  },
   "contact": {
     "intro": "I'm actively seeking Product Manager, Business Systems Analyst, Data Analyst, and Project Manager opportunities where I can apply my technical background and product thinking to solve real business problems.",
     "availability": "Recently graduated with an MS in Engineering/Business Management from George Washington University. Open to full-time roles immediately, as well as contract/consulting opportunities.",

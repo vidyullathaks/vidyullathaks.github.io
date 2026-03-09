@@ -1,10 +1,11 @@
 <script>
 	// Import GlassBox component
 	import GlassBox from '$lib/components/GlassBox.svelte';
-	import { getAbout, getPageIntros } from '$lib/stores/portfolio';
+	import { getAbout, getPageIntros, getBeyondWork } from '$lib/stores/portfolio';
 
 	// Get about data
 	const aboutData = getAbout();
+	const beyondWork = getBeyondWork();
 
 	// Get page intro from portfolio data
 	const pageIntros = getPageIntros();
@@ -46,6 +47,30 @@
 						<li>{@html interest}</li>
 					{/each}
 				</ul>
+			</section>
+		</GlassBox>
+
+		<GlassBox>
+			<section class="beyond-section">
+				<h2>Beyond Work</h2>
+				<p class="beyond-intro">{beyondWork.intro}</p>
+				<div class="beyond-items">
+					{#each beyondWork.items as item}
+						<div class="beyond-item">
+							<div class="beyond-header">
+								<h3>{item.category}</h3>
+								<div class="beyond-header-right">
+									{#if item.link}
+										<a href={item.link} target="_blank" rel="noopener noreferrer" class="beyond-link">{item.linkLabel ?? item.highlight}</a>
+									{:else}
+										<span class="beyond-highlight">{item.highlight}</span>
+									{/if}
+								</div>
+							</div>
+							<p>{item.description}</p>
+						</div>
+					{/each}
+				</div>
 			</section>
 		</GlassBox>
 
@@ -101,6 +126,84 @@
 	.interests li {
 		margin-bottom: 0.8rem;
 		line-height: 1.7;
+	}
+
+	.beyond-section {
+		margin-bottom: 2rem;
+	}
+
+	.beyond-intro {
+		margin-bottom: 1.5rem;
+		line-height: 1.7;
+		color: var(--color-text-muted, var(--color-text));
+		opacity: 0.85;
+	}
+
+	.beyond-items {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+
+	.beyond-item {
+		padding: 1.2rem 1.4rem;
+		border-radius: 8px;
+		border-left: 3px solid var(--color-primary);
+		background: rgba(var(--color-primary-rgb), 0.04);
+	}
+
+	.beyond-header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		margin-bottom: 0.6rem;
+		flex-wrap: wrap;
+	}
+
+	.beyond-header h3 {
+		font-size: 1.05rem;
+		font-weight: 600;
+		color: var(--color-primary);
+		margin: 0;
+	}
+
+	.beyond-header-right {
+		display: flex;
+		align-items: center;
+	}
+
+	.beyond-highlight {
+		font-size: 0.8rem;
+		font-weight: 600;
+		padding: 0.2rem 0.65rem;
+		border-radius: 20px;
+		background: rgba(var(--color-primary-rgb), 0.12);
+		color: var(--color-primary);
+		white-space: nowrap;
+	}
+
+	.beyond-link {
+		font-size: 0.8rem;
+		font-weight: 600;
+		padding: 0.2rem 0.65rem;
+		border-radius: 20px;
+		background: rgba(var(--color-primary-rgb), 0.12);
+		color: var(--color-primary);
+		white-space: nowrap;
+		text-decoration: none;
+		transition: background 0.2s ease, color 0.2s ease;
+	}
+
+	.beyond-link:hover {
+		background: rgba(var(--color-primary-rgb), 0.25);
+		color: var(--color-primary);
+	}
+
+	.beyond-item p {
+		margin: 0;
+		line-height: 1.7;
+		font-size: 0.97rem;
 	}
 
 	.navigation-links {
