@@ -211,10 +211,8 @@
 
 	.beyond-image {
 		display: block;
-		width: auto;
 		max-width: 260px;
-		max-height: 340px;
-		object-fit: cover;
+		height: auto;
 		border-radius: 6px;
 		margin-top: 1rem;
 	}
