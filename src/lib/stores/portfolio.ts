@@ -36,6 +36,8 @@ export interface Education {
   period: string;
   coursework: string[];
   skills: string[];
+  url?: string;
+  logoUrl?: string;
 }
 
 export interface Experience {
@@ -44,8 +46,17 @@ export interface Experience {
   location: string;
   period: string;
   logo: string;
+  logoUrl?: string;
+  url?: string;
   responsibilities: string[];
   achievements: string[];
+}
+
+export interface ProfDevItem {
+  name: string;
+  provider: string;
+  logoUrl: string;
+  url: string;
 }
 
 export interface Skill {
@@ -108,7 +119,7 @@ export interface PortfolioData {
   pageIntros: PageIntros;
   about: About;
   education: Education[];
-  professionalDevelopment: string[];
+  professionalDevelopment: ProfDevItem[];
   experience: Experience[];
   skills: Skills;
   projects: Project[];
@@ -126,7 +137,7 @@ export const getPersonalInfo = (): PersonalInfo => portfolioData.personalInfo;
 export const getPageIntros = (): PageIntros => portfolioData.pageIntros;
 export const getAbout = (): About => portfolioData.about;
 export const getEducation = (): Education[] => portfolioData.education;
-export const getProfessionalDevelopment = (): string[] => portfolioData.professionalDevelopment;
+export const getProfessionalDevelopment = (): ProfDevItem[] => portfolioData.professionalDevelopment as unknown as ProfDevItem[];
 export const getExperience = (): Experience[] => portfolioData.experience;
 export const getSkills = (): Skills => portfolioData.skills;
 export const getProjects = (): Project[] => portfolioData.projects;

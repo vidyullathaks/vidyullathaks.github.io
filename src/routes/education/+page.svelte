@@ -1,6 +1,7 @@
 <script>
 	import GlassBox from '$lib/components/GlassBox.svelte';
 	import { getEducation, getProfessionalDevelopment, getPageIntros } from '$lib/stores/portfolio';
+	import type { ProfDevItem } from '$lib/stores/portfolio';
 
 	// Get education data
 	const educationData = getEducation();
@@ -26,7 +27,14 @@
 		<section class="education-section">
 			{#each educationData as education}
 				<GlassBox padding="1.5rem">
-					<h2>{education.degree}</h2>
+					<div class="education-header">
+						<h2>{education.degree}</h2>
+						{#if education.logoUrl}
+							<a href={education.url} target="_blank" rel="noopener noreferrer" class="institution-logo-link" aria-label="{education.institution} website">
+								<img src={education.logoUrl} alt="{education.institution} logo" class="institution-logo-img" />
+							</a>
+						{/if}
+					</div>
 					<p class="institution">{education.institution}</p>
 					<p class="location">{education.location}</p>
 					<p class="period">{education.period}</p>
@@ -55,9 +63,16 @@
 			<GlassBox padding="1.5rem">
 				<p>In addition to formal education, I regularly pursue professional development opportunities to stay current with industry trends and enhance my skill set:</p>
 
-				<ul>
+				<ul class="prof-dev-list">
 					{#each professionalDevelopment as item}
-						<li>{item}</li>
+						<li class="prof-dev-item">
+							{#if item.logoUrl}
+								<a href={item.url} target="_blank" rel="noopener noreferrer" class="provider-logo-link" aria-label="{item.provider} website">
+									<img src={item.logoUrl} alt="{item.provider} logo" class="provider-logo" />
+								</a>
+							{/if}
+							<span>{item.name}</span>
+						</li>
 					{/each}
 				</ul>
 			</GlassBox>
@@ -132,6 +147,66 @@
 	li {
 		margin-bottom: 0.5rem;
 		line-height: 1.5;
+	}
+
+	.education-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 0.5rem;
+	}
+
+	.institution-logo-link {
+		display: inline-flex;
+		align-items: center;
+		border-radius: 8px;
+		overflow: hidden;
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+		flex-shrink: 0;
+	}
+
+	.institution-logo-link:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+	}
+
+	.institution-logo-img {
+		height: 40px;
+		width: auto;
+		display: block;
+	}
+
+	.prof-dev-list {
+		list-style: none;
+		padding-left: 0;
+	}
+
+	.prof-dev-item {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		margin-bottom: 0.75rem;
+		line-height: 1.5;
+	}
+
+	.provider-logo-link {
+		display: inline-flex;
+		align-items: center;
+		flex-shrink: 0;
+		border-radius: 6px;
+		overflow: hidden;
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+
+	.provider-logo-link:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+	}
+
+	.provider-logo {
+		height: 28px;
+		width: auto;
+		display: block;
 	}
 
 	.certifications {
