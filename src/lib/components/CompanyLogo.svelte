@@ -20,39 +20,40 @@
 >
   {#if type === 'hpe'}
     <!--
-      HPE wordmark: H and P in currentColor, E split —
-      top half currentColor, bottom half HPE green.
-      The E's vertical bar runs full height; a green rect covers
-      the lower ~50%, giving the distinctive two-tone E.
+      HPE wordmark using MetricHPE / HPE Graphik brand typeface.
+      H and P in currentColor; E rendered twice with CSS clip-path
+      so the top half stays currentColor and the bottom half is HPE green.
     -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 20"
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 24"
          width={size * 1.5} height={size * 0.78} aria-hidden="true">
-      <!-- H -->
-      <rect x="0"  y="0"  width="3.5" height="20" fill="currentColor"/>
-      <rect x="0"  y="8"  width="11"  height="4"  fill="currentColor"/>
-      <rect x="7.5" y="0" width="3.5" height="20" fill="currentColor"/>
-      <!-- P -->
-      <rect x="14" y="0"  width="3.5" height="20" fill="currentColor"/>
-      <path d="M17.5 0 Q25.5 0 25.5 5 Q25.5 10 17.5 10 Z" fill="currentColor"/>
+      <!-- HP in brand font -->
+      <text x="1" y="20"
+            font-family='"Metric HPE","HPE Graphik","Graphik","Helvetica Neue",Arial,sans-serif'
+            font-size="21" font-weight="bold" fill="currentColor" letter-spacing="0.5">HP</text>
       <!-- E — top half currentColor -->
-      <rect x="29"  y="0"  width="3.5" height="10" fill="currentColor"/>
-      <rect x="29"  y="0"  width="9"   height="3.5" fill="currentColor"/>
-      <rect x="29"  y="6.5" width="7"  height="3.5" fill="currentColor"/>
-      <!-- E — bottom half green (#01A982) -->
-      <rect x="29"  y="10" width="9"   height="10" fill="#01A982"/>
+      <text x="33" y="20"
+            font-family='"Metric HPE","HPE Graphik","Graphik","Helvetica Neue",Arial,sans-serif'
+            font-size="21" font-weight="bold" fill="currentColor"
+            style="clip-path: inset(0 0 50% 0)">E</text>
+      <!-- E — bottom half HPE green -->
+      <text x="33" y="20"
+            font-family='"Metric HPE","HPE Graphik","Graphik","Helvetica Neue",Arial,sans-serif'
+            font-size="21" font-weight="bold" fill="#01A982"
+            style="clip-path: inset(50% 0 0 0)">E</text>
     </svg>
 
   {:else if type === 'gwu'}
     <!--
-      GWU logo: gold rule — GW serif — gold rule, equal spacing above and below.
-      viewBox 72×54, lines at y=2 and y=48 (h=4 each), text baseline y=39
-      gives equal ~6.5 px gap on both sides of the GW caps.
+      GWU logo: gold rule — GW in Avenir Next / GW Liberated — gold rule.
+      Avenir Next LT Pro is GW's primary brand typeface; GW Liberated
+      (a modified Liberator) is used in the official logomark.
     -->
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 54"
          width={size * 1.55} height={size * 1.16} aria-hidden="true">
       <rect x="0" y="2"  width="72" height="4" fill="#C8A951"/>
-      <text x="36" y="39" text-anchor="middle" font-size="34" font-weight="bold"
-            fill="currentColor" font-family="Georgia, 'Times New Roman', serif">GW</text>
+      <text x="36" y="39" text-anchor="middle" font-size="34" font-weight="900"
+            fill="currentColor"
+            font-family='"GW Liberated","Avenir Next LT Pro","Avenir Next","Avenir","Century Gothic","Trebuchet MS",sans-serif'>GW</text>
       <rect x="0" y="48" width="72" height="4" fill="#C8A951"/>
     </svg>
 
