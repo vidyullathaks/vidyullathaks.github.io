@@ -236,7 +236,7 @@
 		border-radius: 6px;
 	}
 
-	@media (max-width: 540px) {
+	@media (max-width: 640px) {
 		.beyond-item-inner.has-image {
 			flex-direction: column;
 		}
