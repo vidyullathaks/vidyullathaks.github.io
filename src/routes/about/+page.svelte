@@ -72,7 +72,10 @@
 									<p>{item.description}</p>
 								</div>
 								{#if item.image}
-									<img src={item.image} alt={item.imageAlt ?? item.category} class="beyond-image" />
+									<div class="beyond-image-wrap">
+										<img src={item.image} alt={item.imageAlt ?? item.category} class="beyond-image" />
+										{#if item.highlight}<p class="image-caption">{item.highlight}</p>{/if}
+									</div>
 								{/if}
 							</div>
 						</div>
@@ -228,12 +231,27 @@
 		flex: 1;
 	}
 
+	.beyond-image-wrap {
+		flex-shrink: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.4rem;
+	}
+
 	.beyond-image {
 		display: block;
 		width: 200px;
-		flex-shrink: 0;
 		height: auto;
 		border-radius: 6px;
+	}
+
+	.image-caption {
+		font-size: 0.75rem;
+		color: var(--color-text-muted);
+		text-align: center;
+		margin: 0;
+		font-style: italic;
 	}
 
 	@media (max-width: 640px) {
@@ -241,10 +259,14 @@
 			flex-direction: column;
 		}
 
-		.beyond-image {
+		.beyond-image-wrap {
 			width: 100%;
 			max-width: 260px;
 			margin-top: 1rem;
+		}
+
+		.beyond-image {
+			width: 100%;
 		}
 	}
 

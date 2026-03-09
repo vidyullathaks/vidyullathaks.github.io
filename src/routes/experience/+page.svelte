@@ -39,10 +39,8 @@
 				<GlassBox padding="1.5rem">
 					<div class="experience-header">
 						<h2>{experience.position}</h2>
-						{#if experience.url}
+						{#if experience.url && experience.logo !== 'Intern'}
 							<CompanyLogo type={experience.logo.toLowerCase()} url={experience.url} label={experience.company} size={26} />
-						{:else}
-							<div class="company-logo">{experience.logo}</div>
 						{/if}
 					</div>
 					<p class="company">{experience.company}</p>
