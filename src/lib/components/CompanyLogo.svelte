@@ -51,7 +51,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 54"
          width={size * 1.55} height={size * 1.16} aria-hidden="true">
       <rect x="0" y="2"  width="72" height="4" fill="#C8A951"/>
-      <text x="36" y="39" text-anchor="middle" font-size="34" font-weight="900"
+      <text x="36" y="39" text-anchor="middle" font-size="34" font-weight="300"
             fill="currentColor"
             font-family='"GW Liberated","Avenir Next LT Pro","Avenir Next","Avenir","Century Gothic","Trebuchet MS",sans-serif'>GW</text>
       <rect x="0" y="48" width="72" height="4" fill="#C8A951"/>
