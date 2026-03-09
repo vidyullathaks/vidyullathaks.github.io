@@ -74,7 +74,7 @@
 								{#if item.image}
 									<div class="beyond-image-wrap">
 										<img src={item.image} alt={item.imageAlt ?? item.category} class="beyond-image" />
-										{#if item.highlight}<p class="image-caption">{item.highlight}</p>{/if}
+										{#if item.highlight}<span class="beyond-highlight">{item.highlight}</span>{/if}
 									</div>
 								{/if}
 							</div>
@@ -244,14 +244,6 @@
 		width: 200px;
 		height: auto;
 		border-radius: 6px;
-	}
-
-	.image-caption {
-		font-size: 0.75rem;
-		color: var(--color-text-muted);
-		text-align: center;
-		margin: 0;
-		font-style: italic;
 	}
 
 	@media (max-width: 640px) {
