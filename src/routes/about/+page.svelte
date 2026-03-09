@@ -211,10 +211,10 @@
 
 	.beyond-image {
 		display: block;
-		width: 100%;
-		max-height: 360px;
+		width: auto;
+		max-width: 260px;
+		max-height: 340px;
 		object-fit: cover;
-		object-position: center top;
 		border-radius: 6px;
 		margin-top: 1rem;
 	}
