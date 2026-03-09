@@ -327,7 +327,9 @@
       {
         "category": "Hiking & Adventure",
         "description": "Avid hiker who has explored Shenandoah National Park 8+ times in the past two years. Completed the Kuari Pass trek in the Garhwal Himalayas, Uttarakhand-a high-altitude trail reaching 12,516 ft (3,815 m) with panoramic views of Nanda Devi, Kamet, Trishul, and Dronagiri peaks.",
-        "highlight": "Kuari Pass, 12,516 ft"
+        "highlight": "Kuari Pass, 12,516 ft",
+        "image": "/images/kuari-pass.jpeg",
+        "imageAlt": "Taking a break on the Kuari Pass trek in the Garhwal Himalayas"
       },
       {
         "category": "Animal Welfare & Community Organizing",

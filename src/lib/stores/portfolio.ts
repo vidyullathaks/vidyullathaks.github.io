@@ -76,6 +76,8 @@ export interface BeyondWorkItem {
   highlight: string;
   link?: string;
   linkLabel?: string;
+  image?: string;
+  imageAlt?: string;
 }
 
 export interface BeyondWork {
