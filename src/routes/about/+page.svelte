@@ -142,11 +142,13 @@
 		margin-bottom: 2rem;
 	}
 
+	.beyond-section > h2:first-child {
+		margin-top: 0;
+	}
+
 	.beyond-intro {
 		margin-bottom: 1.5rem;
 		line-height: 1.7;
-		color: var(--color-text-muted, var(--color-text));
-		opacity: 0.85;
 	}
 
 	.beyond-items {

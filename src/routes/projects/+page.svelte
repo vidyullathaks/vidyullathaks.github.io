@@ -64,7 +64,7 @@
 
 <style>
 	.projects-page {
-		padding: 2rem 0 4rem 0;
+		padding: 3rem 0 4rem 0;
 	}
 
 	.container {
@@ -75,13 +75,13 @@
 
 	h1 {
 		font-size: 2.2rem;
-		margin-bottom: 1.5rem;
+		margin-bottom: 1rem;
 	}
 
 	.intro {
 		font-size: 1.1rem;
 		max-width: 800px;
-		margin-bottom: 2.5rem;
+		margin-bottom: 2rem;
 	}
 
 	.projects-grid {

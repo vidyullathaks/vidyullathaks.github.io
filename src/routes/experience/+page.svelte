@@ -111,8 +111,12 @@
 
 	h2 {
 		font-size: 1.5rem;
-		margin-bottom: 0.5rem;
+		margin: 2rem 0 0.5rem 0;
 		color: var(--color-primary);
+	}
+
+	.experience-header h2 {
+		margin-top: 0;
 	}
 
 	h3 {
