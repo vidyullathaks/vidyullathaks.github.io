@@ -319,15 +319,17 @@
     "items": [
       {
         "category": "Carnatic Classical Music",
-        "description": "Trained Carnatic classical singer with 15 years of formal training. I've performed at concerts across South India, and one of my YouTube performances has garnered 92,000+ views.",
-        "highlight": "92K+ YouTube views",
+        "description": "Trained Carnatic classical singer with 15 years of formal training. I've performed at concerts across South India, served as Music Team Head for 3 years at Dayananda Sagar College of Engineering, and one of my YouTube performances has garnered 99,000+ views.",
+        "highlight": "99K+ YouTube views",
         "link": "https://www.youtube.com/watch?v=OU5HL7rq0ko",
         "linkLabel": "Watch on YouTube"
       },
       {
         "category": "Hiking & Adventure",
         "description": "Avid hiker who has explored Shenandoah National Park 8+ times in the past two years. Completed the Kuari Pass trek in the Garhwal Himalayas, Uttarakhand-a high-altitude trail reaching 12,516 ft (3,815 m) with panoramic views of Nanda Devi, Kamet, Trishul, and Dronagiri peaks.",
-        "highlight": "Kuari Pass, 12,516 ft"
+        "highlight": "Kuari Pass, 12,516 ft",
+        "image": "/images/kuari-pass.jpeg",
+        "imageAlt": "Taking a break on the Kuari Pass trek in the Garhwal Himalayas"
       },
       {
         "category": "Animal Welfare & Community Organizing",

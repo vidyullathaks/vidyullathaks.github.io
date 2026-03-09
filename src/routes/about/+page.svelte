@@ -68,6 +68,9 @@
 								</div>
 							</div>
 							<p>{item.description}</p>
+							{#if item.image}
+								<img src={item.image} alt={item.imageAlt ?? item.category} class="beyond-image" />
+							{/if}
 						</div>
 					{/each}
 				</div>
@@ -204,6 +207,16 @@
 		margin: 0;
 		line-height: 1.7;
 		font-size: 0.97rem;
+	}
+
+	.beyond-image {
+		display: block;
+		width: 100%;
+		max-height: 360px;
+		object-fit: cover;
+		object-position: center top;
+		border-radius: 6px;
+		margin-top: 1rem;
 	}
 
 	.navigation-links {
