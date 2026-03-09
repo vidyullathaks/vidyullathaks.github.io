@@ -1,5 +1,6 @@
 <script>
 	import GlassBox from '$lib/components/GlassBox.svelte';
+	import CompanyLogo from '$lib/components/CompanyLogo.svelte';
 	import { getExperience, getSkills, getPageIntros } from '$lib/stores/portfolio';
 
 	// Get experience data
@@ -38,10 +39,8 @@
 				<GlassBox padding="1.5rem">
 					<div class="experience-header">
 						<h2>{experience.position}</h2>
-						{#if experience.logoUrl}
-							<a href={experience.url} target="_blank" rel="noopener noreferrer" class="company-logo-link" aria-label="{experience.company} website">
-								<img src={experience.logoUrl} alt="{experience.company} logo" class="company-logo-img" />
-							</a>
+						{#if experience.url}
+							<CompanyLogo type={experience.logo.toLowerCase()} url={experience.url} label={experience.company} size={26} />
 						{:else}
 							<div class="company-logo">{experience.logo}</div>
 						{/if}
@@ -146,26 +145,6 @@
 		justify-content: center;
 		font-weight: bold;
 		font-size: 0.8rem;
-	}
-
-	.company-logo-link {
-		display: inline-flex;
-		align-items: center;
-		border-radius: 8px;
-		overflow: hidden;
-		transition: transform 0.2s ease, box-shadow 0.2s ease;
-		flex-shrink: 0;
-	}
-
-	.company-logo-link:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-	}
-
-	.company-logo-img {
-		height: 40px;
-		width: auto;
-		display: block;
 	}
 
 	.company {

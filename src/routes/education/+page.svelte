@@ -1,5 +1,6 @@
 <script>
 	import GlassBox from '$lib/components/GlassBox.svelte';
+	import CompanyLogo from '$lib/components/CompanyLogo.svelte';
 	import { getEducation, getProfessionalDevelopment, getPageIntros } from '$lib/stores/portfolio';
 
 	// Get education data
@@ -8,6 +9,18 @@
 
 	// Get page intro from portfolio data
 	const pageIntros = getPageIntros();
+
+	function getEduLogoType(institution) {
+		if (institution.includes('George Washington')) return 'gwu';
+		if (institution.includes('Dayananda Sagar')) return 'dsce';
+		return null;
+	}
+
+	function getProviderLogoType(provider) {
+		if (provider === 'LinkedIn Learning') return 'linkedin';
+		if (provider === 'Amazon Web Services') return 'aws';
+		return null;
+	}
 </script>
 
 <svelte:head>
@@ -28,10 +41,13 @@
 				<GlassBox padding="1.5rem">
 					<div class="education-header">
 						<h2>{education.degree}</h2>
-						{#if education.logoUrl}
-							<a href={education.url} target="_blank" rel="noopener noreferrer" class="institution-logo-link" aria-label="{education.institution} website">
-								<img src={education.logoUrl} alt="{education.institution} logo" class="institution-logo-img" />
-							</a>
+						{#if education.url && getEduLogoType(education.institution)}
+							<CompanyLogo
+								type={getEduLogoType(education.institution)}
+								url={education.url}
+								label={education.institution}
+								size={26}
+							/>
 						{/if}
 					</div>
 					<p class="institution">{education.institution}</p>
@@ -65,10 +81,13 @@
 				<ul class="prof-dev-list">
 					{#each professionalDevelopment as item}
 						<li class="prof-dev-item">
-							{#if item.logoUrl}
-								<a href={item.url} target="_blank" rel="noopener noreferrer" class="provider-logo-link" aria-label="{item.provider} website">
-									<img src={item.logoUrl} alt="{item.provider} logo" class="provider-logo" />
-								</a>
+							{#if getProviderLogoType(item.provider)}
+								<CompanyLogo
+									type={getProviderLogoType(item.provider)}
+									url={item.url}
+									label={item.provider}
+									size={18}
+								/>
 							{/if}
 							<span>{item.name}</span>
 						</li>
@@ -122,6 +141,14 @@
 		margin-bottom: 2rem;
 	}
 
+	.education-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 0.5rem;
+		gap: 1rem;
+	}
+
 	.institution {
 		font-weight: 600;
 		font-size: 1.1rem;
@@ -148,68 +175,22 @@
 		line-height: 1.5;
 	}
 
-	.education-header {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 0.5rem;
-	}
-
-	.institution-logo-link {
-		display: inline-flex;
-		align-items: center;
-		border-radius: 8px;
-		overflow: hidden;
-		transition: transform 0.2s ease, box-shadow 0.2s ease;
-		flex-shrink: 0;
-	}
-
-	.institution-logo-link:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-	}
-
-	.institution-logo-img {
-		height: 40px;
-		width: auto;
-		display: block;
+	.certifications {
+		margin-bottom: 2rem;
 	}
 
 	.prof-dev-list {
 		list-style: none;
 		padding-left: 0;
+		margin-top: 1rem;
 	}
 
 	.prof-dev-item {
 		display: flex;
 		align-items: center;
 		gap: 0.75rem;
-		margin-bottom: 0.75rem;
+		margin-bottom: 0.6rem;
 		line-height: 1.5;
-	}
-
-	.provider-logo-link {
-		display: inline-flex;
-		align-items: center;
-		flex-shrink: 0;
-		border-radius: 6px;
-		overflow: hidden;
-		transition: transform 0.2s ease, box-shadow 0.2s ease;
-	}
-
-	.provider-logo-link:hover {
-		transform: translateY(-2px);
-		box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-	}
-
-	.provider-logo {
-		height: 28px;
-		width: auto;
-		display: block;
-	}
-
-	.certifications {
-		margin-bottom: 2rem;
 	}
 
 	.navigation-links {
