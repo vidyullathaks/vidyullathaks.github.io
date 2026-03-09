@@ -12,7 +12,6 @@
 
 	function getEduLogoType(institution) {
 		if (institution.includes('George Washington')) return 'gwu';
-		if (institution.includes('Dayananda Sagar')) return 'dsce';
 		return null;
 	}
 
