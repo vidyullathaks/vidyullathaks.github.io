@@ -57,20 +57,24 @@
 				<div class="beyond-items">
 					{#each beyondWork.items as item}
 						<div class="beyond-item">
-							<div class="beyond-header">
-								<h3>{item.category}</h3>
-								<div class="beyond-header-right">
-									{#if item.link}
-										<a href={item.link} target="_blank" rel="noopener noreferrer" class="beyond-link">{item.linkLabel ?? item.highlight}</a>
-									{:else}
-										<span class="beyond-highlight">{item.highlight}</span>
-									{/if}
+							<div class="beyond-item-inner {item.image ? 'has-image' : ''}">
+								<div class="beyond-text">
+									<div class="beyond-header">
+										<h3>{item.category}</h3>
+										<div class="beyond-header-right">
+											{#if item.link}
+												<a href={item.link} target="_blank" rel="noopener noreferrer" class="beyond-link">{item.linkLabel ?? item.highlight}</a>
+											{:else}
+												<span class="beyond-highlight">{item.highlight}</span>
+											{/if}
+										</div>
+									</div>
+									<p>{item.description}</p>
 								</div>
+								{#if item.image}
+									<img src={item.image} alt={item.imageAlt ?? item.category} class="beyond-image" />
+								{/if}
 							</div>
-							<p>{item.description}</p>
-							{#if item.image}
-								<img src={item.image} alt={item.imageAlt ?? item.category} class="beyond-image" />
-							{/if}
 						</div>
 					{/each}
 				</div>
@@ -209,12 +213,39 @@
 		font-size: 0.97rem;
 	}
 
+	.beyond-item-inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.beyond-item-inner.has-image {
+		flex-direction: row;
+		align-items: flex-start;
+		gap: 1.2rem;
+	}
+
+	.beyond-text {
+		flex: 1;
+	}
+
 	.beyond-image {
 		display: block;
-		max-width: 260px;
+		width: 200px;
+		flex-shrink: 0;
 		height: auto;
 		border-radius: 6px;
-		margin-top: 1rem;
+	}
+
+	@media (max-width: 640px) {
+		.beyond-item-inner.has-image {
+			flex-direction: column;
+		}
+
+		.beyond-image {
+			width: 100%;
+			max-width: 260px;
+			margin-top: 1rem;
+		}
 	}
 
 	.navigation-links {
