@@ -1,7 +1,6 @@
 <script>
 	import GlassBox from '$lib/components/GlassBox.svelte';
 	import { getEducation, getProfessionalDevelopment, getPageIntros } from '$lib/stores/portfolio';
-	import type { ProfDevItem } from '$lib/stores/portfolio';
 
 	// Get education data
 	const educationData = getEducation();
