@@ -333,6 +333,28 @@
   },
   "projects": [
     {
+      "title": "TokenLens — AI API Cost Intelligence",
+      "type": "Personal Project",
+      "description": "Built a full-stack AI cost attribution proxy for dev teams who get surprise API bills with no visibility into what's spending the money. Integration is one URL swap + two headers — zero SDK changes. Tracks cost per feature and per user in real time, stores every call in MongoDB with Fernet-encrypted provider key storage, and surfaces a live React dashboard with 30-day spend trends, top-user breakdowns, configurable spike alerts, and a real-time call feed. Shipped with a full Product Strategy doc, deliberate scope trade-off table, and V2/V3 roadmap.",
+      "skills": [
+        "FastAPI",
+        "Python",
+        "React",
+        "MongoDB",
+        "Recharts",
+        "Tailwind CSS",
+        "OpenAI API",
+        "Anthropic Claude API",
+        "Google Gemini API",
+        "Vercel",
+        "Product Management",
+        "API Design"
+      ],
+      "date": "Mar 2026",
+      "github": "https://github.com/vidyullathaks/TokenLens",
+      "link": "https://tokenlens-three.vercel.app"
+    },
+    {
       "title": "IdeaForge - AI Product Manager Toolkit",
       "type": "Personal Project",
       "description": "Built a full-stack AI-powered PM toolkit with 9 specialized tools: PRD Generator, User Story Generator, Problem Refiner, Feature Prioritizer (RICE scoring), Sprint Planner, Interview Prep, User Persona Generator, Competitive Analysis, and OKR Generator. Features PRD Readiness Scoring across 6 dimensions, inline editing with AI rewrite, version history, shareable links, PDF/Markdown/Notion export, analytics dashboard, and custom templates. Supports multi-model AI (OpenAI GPT and Anthropic Claude) \u2014 deployed and live.",
