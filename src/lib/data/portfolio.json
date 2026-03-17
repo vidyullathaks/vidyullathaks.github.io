@@ -333,9 +333,9 @@
   },
   "projects": [
     {
-      "title": "TokenLens — AI API Cost Intelligence",
+      "title": "TokenLens - AI API Cost Intelligence",
       "type": "Personal Project",
-      "description": "Built a full-stack AI cost attribution proxy for dev teams who get surprise API bills with no visibility into what's spending the money. Integration is one URL swap + two headers — zero SDK changes. Tracks cost per feature and per user in real time, stores every call in MongoDB with Fernet-encrypted provider key storage, and surfaces a live React dashboard with 30-day spend trends, top-user breakdowns, configurable spike alerts, and a real-time call feed. Shipped with a full Product Strategy doc, deliberate scope trade-off table, and V2/V3 roadmap.",
+      "description": "Built a full-stack AI cost attribution proxy for dev teams who get surprise API bills with no visibility into what's spending the money. Integration is one URL swap + two headers - zero SDK changes. Tracks cost per feature and per user in real time, stores every call in MongoDB with Fernet-encrypted provider key storage, and surfaces a live React dashboard with 30-day spend trends, top-user breakdowns, configurable spike alerts, and a real-time call feed. Shipped with a full Product Strategy doc, deliberate scope trade-off table, and V2/V3 roadmap.",
       "skills": [
         "FastAPI",
         "Python",
