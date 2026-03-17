@@ -8,6 +8,12 @@
 
 	// Get personal info data
 	const personalInfo = getPersonalInfo();
+
+	let photoFailed = false;
+
+	function handlePhotoError() {
+		photoFailed = true;
+	}
 </script>
 
 <svelte:head>
@@ -31,11 +37,20 @@
 						{/if}
 					</div>
 					<div class="photo-bubble">
-						<img
-							src={personalInfo.photo}
-							alt={`Photo of ${personalInfo.name}`}
-							class="profile-photo"
-						/>
+						{#if photoFailed}
+							<div class="profile-initials" aria-label={`Photo of ${personalInfo.name}`}>
+								{personalInfo.name.split(' ').map((n: string) => n[0]).join('')}
+							</div>
+						{:else}
+							<img
+								src={personalInfo.photo}
+								alt={`Photo of ${personalInfo.name}`}
+								class="profile-photo"
+								loading="eager"
+								fetchpriority="high"
+								on:error={handlePhotoError}
+							/>
+						{/if}
 					</div>
 				</div>
 			</GlassBox>
@@ -152,6 +167,20 @@
 		border: 2px solid rgba(var(--color-primary-rgb), 0.3);
 	}
 
+	.profile-initials {
+		width: 300px;
+		height: 300px;
+		border-radius: 50%;
+		border: 2px solid rgba(var(--color-primary-rgb), 0.3);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 4rem;
+		font-weight: 600;
+		color: var(--color-primary);
+		background: rgba(var(--color-primary-rgb), 0.08);
+	}
+
 	.social-container {
 		margin-top: 3rem;
 	}
@@ -180,7 +209,7 @@
 			margin-left: 30px;
 		}
 
-		.profile-photo {
+		.profile-photo, .profile-initials {
 			width: 250px;
 			height: 250px;
 		}
@@ -231,7 +260,7 @@
 			margin-left: 0;
 		}
 
-		.profile-photo {
+		.profile-photo, .profile-initials {
 			width: 220px;
 			height: 220px;
 		}

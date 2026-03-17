@@ -352,7 +352,8 @@
       ],
       "date": "Mar 2026",
       "github": "https://github.com/vidyullathaks/TokenLens",
-      "link": "https://tokenlens-three.vercel.app"
+      "link": "https://tokenlens-three.vercel.app",
+      "linkLabel": "Try It Out"
     },
     {
       "title": "IdeaForge - AI Product Manager Toolkit",
@@ -371,7 +372,8 @@
       ],
       "date": "Feb 2026",
       "github": "https://github.com/vidyullathaks/idea-to-docs",
-      "link": "https://idea-to-docs.replit.app"
+      "link": "https://idea-to-docs.replit.app",
+      "linkLabel": "Try It Out"
     },
     {
       "title": "Agentic AI Job Search Optimizer",
