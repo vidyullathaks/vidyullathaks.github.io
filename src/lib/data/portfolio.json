@@ -1,27 +1,27 @@
 {
   "personalInfo": {
     "name": "Vidyullatha KS",
-    "title": "Product Manager | Data Analyst | Business Systems Analyst",
-    "mainTagline": "I turn complex business problems into clear product strategies and data-driven solutions. With 4+ years at HPE and a Master's in Engineering/Business Management, I bridge technical execution and strategic thinking-delivering measurable impact through analytics, product development, and cross-functional leadership.",
+    "title": "AI Product Manager | Data Analyst | Business Systems Analyst",
+    "mainTagline": "I build AI-native products and turn complex business problems into clear product strategies. With 4+ years at HPE and a Master's in Engineering/Business Management, I bridge LLM integration, product thinking, and data-driven execution - shipping AI applications that solve real problems.",
 
     "location": "Alexandria, VA",
     "photo": "/images/profile-photo-3.jpg"
   },
   "pageIntros": {
     "skills": "Combining technical expertise in data analytics, product management, and software development with strategic business acumen to deliver solutions that drive measurable results.",
-    "experience": "Progressive career trajectory from Software Designer to Product Manager, consistently delivering quantifiable impact: 47% faster queries, 35% efficiency gains, 45% engagement growth, and products adopted by hundreds of users.",
+    "experience": "Progressive career from Software Designer to AI Product Manager - shipping AI-native products, optimizing data pipelines, and delivering measurable impact: 47% faster queries, 35% efficiency gains, 45% engagement growth, and live products used by real people.",
     "education": "",
-    "projects": "End-to-end projects demonstrating product thinking, analytical rigor, and technical execution-from full-stack AI applications that transform how product teams work to market research studies informing pricing strategy.",
+    "projects": "End-to-end AI products and research projects demonstrating the full PM loop - problem discovery, scoping, building, shipping, and iterating. From LLM-powered applications with live deployments to market research studies that informed real pricing decisions.",
     "about": "",
     "contact": ""
   },
   "about": {
-    "intro": "Product-minded professional with a proven ability to translate user needs into technical solutions that deliver business value. Recently completed my Master's in Engineering/Business Management at George Washington University, where I drove student engagement programs (30% participation increase, 45% attendance growth) and built AI-powered tools that solve real product problems.",
-    "background": "I spent four years at Hewlett Packard Enterprises building analytics platforms, optimizing data pipelines, and working with product teams to ship features that moved business metrics. My graduate work combines technical depth (Python, SQL, R) with business strategy (product management, marketing analytics, decision science)-positioning me at the intersection where data meets product.",
+    "intro": "AI product builder and PM with a track record of shipping things. I've designed and deployed multiple AI-native applications - an AI PM toolkit (IdeaForge), an API cost attribution platform (TokenLens), an AI job matcher (FreshFit), and an agentic job search optimizer. Each one started from a real problem, went through user research and scoping, and shipped as a live product.",
+    "background": "I spent four years at Hewlett Packard Enterprise building analytics platforms, optimizing data pipelines, and working with product teams to ship features that moved business metrics. My graduate work at GWU combines technical depth (Python, SQL, R, LLM APIs) with PM fundamentals (roadmap planning, user research, go-to-market strategy) - positioning me at the intersection where AI capability meets product thinking.",
     "professionalBackground": "At HPE, I advanced from Software Designer I to II by consistently delivering impact: I reduced query time by 47%, eliminated 8 hours of manual reporting weekly, and developed a POC that validated 30% performance improvements and secured executive buy-in for full-scale implementation. My current role extends this track record-I launched a 0-to-1 coaching program for 25+ student leaders, automated nomination processes with VBA, and drove 45% attendance growth through data-informed marketing strategies.",
-    "careerObjectives": "Seeking Product Manager, Business Systems Analyst, Data Analyst, or Project Manager roles where I can apply my technical background and product thinking to solve real business problems. I thrive in environments that value analytical rigor, user research, and cross-functional collaboration.",
+    "careerObjectives": "Seeking AI Product Manager roles where I can apply hands-on LLM product development experience alongside PM fundamentals to ship products users love. Also open to Product Manager, Data Analyst, and Business Systems Analyst roles. I thrive in environments that value analytical rigor, user research, and cross-functional collaboration.",
     "interests": [
-      "AI Product Development: Building full-stack AI applications (IdeaForge PM Toolkit, job search optimizer) using LLM APIs, prompt engineering, and workflow automation to solve real problems",
+      "AI Product Development: Designed and shipped 4 AI-native products (IdeaForge, TokenLens, FreshFit, Agentic Job Search Optimizer) using LLM APIs (OpenAI, Claude, Groq, Gemini), prompt engineering, and agentic workflows - each solving a real problem with a live deployment",
       "Product Management: Building 0-to-1 products, conducting user research, prioritizing roadmaps, and shipping features that users actually want",
       "Data Analytics: Using SQL, Python, and R to uncover insights, build dashboards, and inform strategic decisions",
       "Business Systems Analysis: Gathering requirements, documenting processes, identifying gaps, and translating business needs into technical specifications",
@@ -234,8 +234,8 @@
   "skills": {
     "technical": [
       {
-        "name": "Product Management",
-        "description": "Product strategy & roadmap, user research & discovery, feature prioritization, cross-functional leadership, product analytics & KPIs, Agile/Scrum methodologies",
+        "name": "AI Product Management",
+        "description": "AI product strategy & roadmap, LLM product lifecycle, user research & discovery, feature prioritization (RICE, MoSCoW), cross-functional leadership, product analytics & KPIs, Agile/Scrum methodologies",
         "level": "advanced"
       },
       {
@@ -260,7 +260,7 @@
       },
       {
         "name": "AI Tools & LLMs",
-        "description": "OpenAI API, Claude API, prompt engineering, n8n workflow automation, LLM integration-building full-stack AI applications and intelligent workflows",
+        "description": "OpenAI API, Claude API, Groq API, Gemini API, prompt engineering, n8n workflow automation, LLM evaluation and iteration, agentic workflows - shipped 4 AI-native products across multiple providers",
         "level": "advanced"
       }
     ],
@@ -333,6 +333,26 @@
   },
   "projects": [
     {
+      "title": "FreshFit - AI Job Matcher",
+      "type": "Personal Project",
+      "description": "Built a zero-backend, single-page job search tool that pulls postings from the last 24 hours across 6 sources (RemoteOK, LinkedIn via Apify, Adzuna, and more), scores each one against an uploaded resume using a client-side AI matching algorithm, and rewrites the resume using Groq's LLaMA 3.3-70B model to be ATS-optimised for the target role. PDF parsing runs entirely in the browser via PDF.js - no file ever leaves the user's machine. Entire app is a single HTML file with no build step, no server, and no dependencies.",
+      "skills": [
+        "Vanilla JavaScript",
+        "HTML5",
+        "Tailwind CSS",
+        "Groq API",
+        "PDF.js",
+        "Apify",
+        "GitHub Pages",
+        "AI/ML",
+        "API Integration"
+      ],
+      "date": "May 2026",
+      "github": "https://github.com/vidyullathaks/FreshFit-Job-Matcher",
+      "link": "https://vidyullathaks.github.io/FreshFit-Job-Matcher",
+      "linkLabel": "Try It Out"
+    },
+    {
       "title": "TokenLens - AI API Cost Intelligence",
       "type": "Personal Project",
       "description": "Built a full-stack AI cost attribution proxy for dev teams who get surprise API bills with no visibility into what's spending the money. Integration is one URL swap + two headers - zero SDK changes. Tracks cost per feature and per user in real time, stores every call in MongoDB with Fernet-encrypted provider key storage, and surfaces a live React dashboard with 30-day spend trends, top-user breakdowns, configurable spike alerts, and a real-time call feed. Shipped with a full Product Strategy doc, deliberate scope trade-off table, and V2/V3 roadmap.",
@@ -358,7 +378,7 @@
     {
       "title": "IdeaForge - AI Product Manager Toolkit",
       "type": "Personal Project",
-      "description": "Built a full-stack AI-powered PM toolkit with 9 specialized tools: PRD Generator, User Story Generator, Problem Refiner, Feature Prioritizer (RICE scoring), Sprint Planner, Interview Prep, User Persona Generator, Competitive Analysis, and OKR Generator. Features PRD Readiness Scoring across 6 dimensions, inline editing with AI rewrite, version history, shareable links, PDF/Markdown/Notion export, analytics dashboard, and custom templates. Supports multi-model AI (OpenAI GPT and Anthropic Claude) \u2014 deployed and live.",
+      "description": "Built a full-stack AI-powered PM toolkit with 9 specialized tools: PRD Generator, User Story Generator, Problem Refiner, Feature Prioritizer (RICE scoring), Sprint Planner, Interview Prep, User Persona Generator, Competitive Analysis, and OKR Generator. Features PRD Readiness Scoring across 6 dimensions, inline editing with AI rewrite, version history, shareable links, PDF/Markdown/Notion export, analytics dashboard, and custom templates. Supports multi-model AI (OpenAI GPT and Anthropic Claude) - deployed and live.",
       "skills": [
         "Full-Stack Development",
         "React",
@@ -465,13 +485,13 @@
     ]
   },
   "contact": {
-    "intro": "I'm actively seeking Product Manager, Business Systems Analyst, Data Analyst, and Project Manager opportunities where I can apply my technical background and product thinking to solve real business problems.",
+    "intro": "I'm actively seeking AI Product Manager and Product Manager opportunities where I can apply hands-on AI product development experience and PM fundamentals to ship products that solve real problems.",
     "availability": "Recently graduated with an MS in Engineering/Business Management from George Washington University. Open to full-time roles immediately, as well as contract/consulting opportunities.",
     "availabilityOptions": [
+      "AI Product Manager roles - Defining LLM product strategy, owning the AI product lifecycle, shipping AI-native applications",
       "Product Manager roles (Associate/Entry-Mid Level) - Building products, conducting user research, defining roadmaps",
       "Business Systems Analyst positions - Gathering requirements, documenting processes, bridging business and technical teams",
-      "Data Analyst opportunities - SQL, Python, dashboards, analytics, insights that drive decisions",
-      "Project Manager roles - Agile/Scrum, stakeholder management, delivery execution"
+      "Data Analyst opportunities - SQL, Python, dashboards, analytics, insights that drive decisions"
     ],
     "responseTime": "I typically respond within 24-48 hours. For urgent opportunities, please mention it in your subject line."
   },
