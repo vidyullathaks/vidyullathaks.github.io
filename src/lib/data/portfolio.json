@@ -149,14 +149,14 @@
   ],
   "experience": [
     {
-      "position": "Student Program Coordinator",
+      "position": "Program Coordinator",
       "company": "George Washington School of Business",
       "location": "Washington, DC",
       "period": "Jan 2025 - Present",
       "logo": "GWU",
       "responsibilities": [
         "Drove product strategy for student engagement programs through user research (surveys, 1:1 interviews with 50+ students) and feedback analysis, identifying unmet needs that improved participation by 30%",
-        "Launched 0-to-1 coaching product after identifying gap through stakeholder interviews with 25+ student leaders; defined MVP features (conflict resolution, event planning templates), delivered in 8-week sprint cycle",
+        "Launched 0-to-1 coaching product (managing $6K budget) after identifying gap through stakeholder interviews with 25+ student leaders; defined MVP features (conflict resolution, event planning templates), delivered in 8-week sprint cycle",
         "Owned go-to-market strategy for signature events, defining target user segments, crafting messaging aligned with student needs, and iterating based on engagement metrics-increased attendance 45%",
         "Automated nominee anonymization process using Qualtrics and Excel VBA for Student Leadership Awards, eliminating bias and reducing manual work",
         "Led Agile project management practices-daily standups, bi-weekly sprint reviews, and clear task breakdowns to keep projects on schedule"
@@ -177,11 +177,12 @@
       "period": "Mar 2023 - Nov 2023",
       "logo": "HPE",
       "responsibilities": [
-        "Led product strategy initiative analyzing user pain points through customer feedback and usage analytics; prioritized roadmap to reduce quote processing time 15%, directly impacting revenue cycle",
+        "Led product strategy initiative analyzing user pain points through customer feedback and usage analytics; prioritized roadmap to reduce quote processing time 15%, directly affecting a $0.6M+ sales pipeline",
         "Owned end-to-end POC product development (requirements gathering \u2192 MVP definition \u2192 stakeholder reviews \u2192 iteration); incorporated user feedback across 4 sprint cycles, validated 30% performance improvement, securing executive buy-in",
         "Enhanced product scalability by designing a process framework for large-scale data ingestion and analytics, increasing operational efficiency by 35%",
         "Conducted competitive landscape analysis for analytics tooling, evaluated 5 vendor solutions against internal requirements, presented findings to product leadership influencing build vs. buy decision",
-        "Drove cross-functional alignment across engineering, product, and operations to deliver key features from concept to deployment in Agile sprints"
+        "Drove cross-functional alignment across engineering, product, and operations to deliver key features from concept to deployment in Agile sprints",
+        "Collaborated with distributed engineering teams across geographies using Jira for backlog grooming and sprint tracking"
       ],
       "achievements": [
         "15% reduction in quote processing time through product strategy alignment",
