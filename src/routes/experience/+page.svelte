@@ -11,10 +11,10 @@
 
 	// Select a subset of skills to display in professional skills section
 	const professionalSkills = [
-		technical.find(skill => skill.name === "Technical Documentation"),
-		technical.find(skill => skill.name === "Quality Assurance"),
-		management.find(skill => skill.name === "Project Coordination"),
-		management.find(skill => skill.name === "Process Improvement")
+		technical.find(skill => skill.name === "Product Management"),
+		technical.find(skill => skill.name === "Data Analysis"),
+		management.find(skill => skill.name === "Agile/Scrum"),
+		management.find(skill => skill.name === "Business Systems Analysis")
 	];
 
 	// Get page intro from portfolio data
