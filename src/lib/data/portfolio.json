@@ -1,8 +1,8 @@
 {
   "personalInfo": {
     "name": "Vidyullatha KS",
-    "title": "AI Product Manager | Data Analyst | Business Systems Analyst",
-    "mainTagline": "I build AI-native products and turn complex business problems into clear product strategies. With 4+ years at HPE and a Master's in Engineering/Business Management, I bridge LLM integration, product thinking, and data-driven execution - shipping AI applications that solve real problems.",
+    "title": "Data, AI, Product & Program Professional",
+    "mainTagline": "I bridge product strategy, program delivery, and AI execution — turning complex business problems into structured, measurable outcomes. With 4+ years at HPE and a Master's in Engineering/Business Management, I combine cross-functional delivery experience, data fluency, and hands-on LLM product-building to ship things that work.",
 
     "location": "Alexandria, VA",
     "photo": "/images/profile-photo-3.jpg"
@@ -19,7 +19,7 @@
     "intro": "AI product builder and PM with a track record of shipping things. I've designed and deployed multiple AI-native applications - an AI PM toolkit (IdeaForge), an API cost attribution platform (TokenLens), an AI job matcher (FreshFit), and an agentic job search optimizer. Each one started from a real problem, went through user research and scoping, and shipped as a live product.",
     "background": "I spent four years at Hewlett Packard Enterprise building analytics platforms, optimizing data pipelines, and working with product teams to ship features that moved business metrics. My graduate work at GWU combines technical depth (Python, SQL, R, LLM APIs) with PM fundamentals (roadmap planning, user research, go-to-market strategy) - positioning me at the intersection where AI capability meets product thinking.",
     "professionalBackground": "At HPE, I advanced from Software Designer I to II by consistently delivering impact: I reduced query time by 47%, eliminated 8 hours of manual reporting weekly, and developed a POC that validated 30% performance improvements and secured executive buy-in for full-scale implementation. My current role extends this track record-I launched a 0-to-1 coaching program for 25+ student leaders, automated nomination processes with VBA, and drove 45% attendance growth through data-informed marketing strategies.",
-    "careerObjectives": "Seeking AI Product Manager roles where I can apply hands-on LLM product development experience alongside PM fundamentals to ship products users love. Also open to Product Manager, Data Analyst, and Business Systems Analyst roles. I thrive in environments that value analytical rigor, user research, and cross-functional collaboration.",
+    "careerObjectives": "Seeking Product Manager, Program Manager, Product/Business Analyst, and Project Lead roles where I can apply cross-functional delivery experience, data fluency, and AI-building skills to drive ambiguous problems to shipped, measurable outcomes. I thrive in environments that value analytical rigor, structured execution, and cross-functional collaboration.",
     "interests": [
       "AI Product Development: Designed and shipped 4 AI-native products (IdeaForge, TokenLens, FreshFit, Agentic Job Search Optimizer) using LLM APIs (OpenAI, Claude, Groq, Gemini), prompt engineering, and agentic workflows - each solving a real problem with a live deployment",
       "Product Management: Building 0-to-1 products, conducting user research, prioritizing roadmaps, and shipping features that users actually want",
@@ -502,12 +502,13 @@
     ]
   },
   "contact": {
-    "intro": "I'm actively seeking AI Product Manager and Product Manager opportunities where I can apply hands-on AI product development experience and PM fundamentals to ship products that solve real problems.",
+    "intro": "I'm actively seeking Product Manager, Program Manager, Product/Business Analyst, and Project Lead opportunities where I can apply cross-functional delivery experience, hands-on AI product development, and data fluency to drive real outcomes.",
     "availability": "Recently graduated with an MS in Engineering/Business Management from George Washington University. Open to full-time roles immediately, as well as contract/consulting opportunities.",
     "availabilityOptions": [
-      "AI Product Manager roles - Defining LLM product strategy, owning the AI product lifecycle, shipping AI-native applications",
-      "Product Manager roles (Associate/Entry-Mid Level) - Building products, conducting user research, defining roadmaps",
-      "Business Systems Analyst positions - Gathering requirements, documenting processes, bridging business and technical teams",
+      "Product Manager roles - Defining product strategy, owning the AI product lifecycle, shipping AI-native applications",
+      "Program Manager roles - Cross-functional delivery, risk management, stakeholder alignment, timeline ownership",
+      "Project Lead positions - Driving initiatives from scope to delivery across engineering, product, and business teams",
+      "Business Systems Analyst / Product Analyst positions - Gathering requirements, documenting processes, bridging business and technical teams",
       "Data Analyst opportunities - SQL, Python, dashboards, analytics, insights that drive decisions"
     ],
     "responseTime": "I typically respond within 24-48 hours. For urgent opportunities, please mention it in your subject line."
