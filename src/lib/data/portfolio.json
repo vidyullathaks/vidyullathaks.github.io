@@ -197,7 +197,7 @@
       "position": "Software Designer I",
       "company": "Hewlett Packard Enterprise",
       "location": "Bengaluru, India",
-      "period": "Feb 2019 - Mar 2023",
+      "period": "Jul 2019 - Feb 2023",
       "logo": "HPE",
       "responsibilities": [
         "Partnered with product team to define success metrics and built automated KPI dashboards that became single source of truth for product performance, eliminating 8 hours/week manual reporting and surfacing insights that reduced operational waste 20%",
@@ -210,6 +210,22 @@
         "8 hours per week manual reporting eliminated via automation",
         "20% operational waste reduction through data-driven insights",
         "40% system efficiency improvement through cross-team collaboration"
+      ],
+      "url": "https://www.hpe.com",
+      "logoUrl": "/images/logos/hpe.svg"
+    },
+    {
+      "position": "Business Intelligence Intern",
+      "company": "Hewlett Packard Enterprise",
+      "location": "Bengaluru, India",
+      "period": "Jan 2019 - Jun 2019",
+      "logo": "HPE",
+      "responsibilities": [
+        "Delivered full migration of 2 Qlik dashboards to Power BI on the NGQ project, connecting to HPE's enterprise data lake and enabling global operations teams to access unified performance reporting",
+        "Self-directed learning of Qlik Sense, QlikView, and Power BI from scratch to execute the migration independently"
+      ],
+      "achievements": [
+        "Migrated 2 enterprise dashboards from Qlik to Power BI, enabling unified global reporting"
       ],
       "url": "https://www.hpe.com",
       "logoUrl": "/images/logos/hpe.svg"
