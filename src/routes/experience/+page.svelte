@@ -1,21 +1,10 @@
 <script>
 	import GlassBox from '$lib/components/GlassBox.svelte';
 	import CompanyLogo from '$lib/components/CompanyLogo.svelte';
-	import { getExperience, getSkills, getPageIntros } from '$lib/stores/portfolio';
+	import { getExperience, getPageIntros } from '$lib/stores/portfolio';
 
 	// Get experience data
 	const experienceData = getExperience();
-
-	// Get skills data for professional skills section
-	const { technical, management } = getSkills();
-
-	// Select a subset of skills to display in professional skills section
-	const professionalSkills = [
-		technical.find(skill => skill.name === "Product Management"),
-		technical.find(skill => skill.name === "Data Analysis"),
-		management.find(skill => skill.name === "Agile/Scrum"),
-		management.find(skill => skill.name === "Business Systems Analysis")
-	];
 
 	// Get page intro from portfolio data
 	const pageIntros = getPageIntros();
@@ -64,20 +53,6 @@
 					</div>
 				</GlassBox>
 			{/each}
-		</section>
-
-		<section class="skills-section">
-			<h2>Professional Skills Developed</h2>
-			<div class="skills-grid">
-				{#each professionalSkills as skill}
-					{#if skill}
-						<GlassBox padding="1rem" opacity={0.3} className="skill-item">
-							<h3>{skill.name}</h3>
-							<p>{skill.description}</p>
-						</GlassBox>
-					{/if}
-				{/each}
-			</div>
 		</section>
 
 		<div class="navigation-links">
@@ -173,32 +148,6 @@
 	li {
 		margin-bottom: 0.5rem;
 		line-height: 1.5;
-	}
-
-	.skills-section {
-		margin-bottom: 2rem;
-	}
-
-	.skills-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-		gap: 1rem;
-		margin-top: 1rem;
-	}
-
-	:global(.skill-item) {
-		margin-bottom: 0;
-	}
-
-	:global(.skill-item h3) {
-		margin: 0 0 0.5rem 0;
-		font-size: 1rem;
-	}
-
-	:global(.skill-item p) {
-		color: var(--color-text-muted);
-		font-size: 0.9rem;
-		margin: 0;
 	}
 
 	.navigation-links {
