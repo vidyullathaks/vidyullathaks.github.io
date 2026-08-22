@@ -61,12 +61,6 @@
 							{/each}
 						</ul>
 
-						<h3>Skills Developed</h3>
-						<ul>
-							{#each education.skills as skill}
-								<li>{skill}</li>
-							{/each}
-						</ul>
 					</div>
 				</GlassBox>
 			{/each}
