@@ -350,26 +350,6 @@
   },
   "projects": [
     {
-      "title": "FreshFit - AI Job Matcher",
-      "type": "Personal Project",
-      "description": "Built a zero-backend, single-page job search tool that pulls postings from the last 24 hours across 6 sources (RemoteOK, LinkedIn via Apify, Adzuna, and more), scores each one against an uploaded resume using a client-side AI matching algorithm, and rewrites the resume using Groq's LLaMA 3.3-70B model to be ATS-optimised for the target role. PDF parsing runs entirely in the browser via PDF.js - no file ever leaves the user's machine. Entire app is a single HTML file with no build step, no server, and no dependencies.",
-      "skills": [
-        "Vanilla JavaScript",
-        "HTML5",
-        "Tailwind CSS",
-        "Groq API",
-        "PDF.js",
-        "Apify",
-        "GitHub Pages",
-        "AI/ML",
-        "API Integration"
-      ],
-      "date": "May 2026",
-      "github": "https://github.com/vidyullathaks/FreshFit-Job-Matcher",
-      "link": "https://vidyullathaks.github.io/FreshFit-Job-Matcher",
-      "linkLabel": "Try It Out"
-    },
-    {
       "title": "TokenLens - AI API Cost Intelligence",
       "type": "Personal Project",
       "description": "Built a full-stack AI cost attribution proxy for dev teams who get surprise API bills with no visibility into what's spending the money. Integration is one URL swap + two headers - zero SDK changes. Tracks cost per feature and per user in real time, stores every call in MongoDB with Fernet-encrypted provider key storage, and surfaces a live React dashboard with 30-day spend trends, top-user breakdowns, configurable spike alerts, and a real-time call feed. Shipped with a full Product Strategy doc, deliberate scope trade-off table, and V2/V3 roadmap.",
@@ -393,6 +373,26 @@
       "linkLabel": "Try It Out"
     },
     {
+      "title": "FreshFit - AI Job Matcher",
+      "type": "Personal Project",
+      "description": "Built a zero-backend, single-page job search tool that pulls postings from the last 24 hours across 6 sources (RemoteOK, LinkedIn via Apify, Adzuna, and more), scores each one against an uploaded resume using a client-side AI matching algorithm, and rewrites the resume using Groq's LLaMA 3.3-70B model to be ATS-optimised for the target role. PDF parsing runs entirely in the browser via PDF.js - no file ever leaves the user's machine. Entire app is a single HTML file with no build step, no server, and no dependencies.",
+      "skills": [
+        "Vanilla JavaScript",
+        "HTML5",
+        "Tailwind CSS",
+        "Groq API",
+        "PDF.js",
+        "Apify",
+        "GitHub Pages",
+        "AI/ML",
+        "API Integration"
+      ],
+      "date": "May 2026",
+      "github": "https://github.com/vidyullathaks/FreshFit-Job-Matcher",
+      "link": "https://vidyullathaks.github.io/FreshFit-Job-Matcher",
+      "linkLabel": "Try It Out"
+    },
+    {
       "title": "IdeaForge - AI Product Manager Toolkit",
       "type": "Personal Project",
       "description": "Built a full-stack AI-powered PM toolkit with 9 specialized tools: PRD Generator, User Story Generator, Problem Refiner, Feature Prioritizer (RICE scoring), Sprint Planner, Interview Prep, User Persona Generator, Competitive Analysis, and OKR Generator. Features PRD Readiness Scoring across 6 dimensions, inline editing with AI rewrite, version history, shareable links, PDF/Markdown/Notion export, analytics dashboard, and custom templates. Supports multi-model AI (OpenAI GPT and Anthropic Claude) - deployed and live.",
@@ -408,9 +408,7 @@
         "Product Management"
       ],
       "date": "Feb 2026",
-      "github": "https://github.com/vidyullathaks/idea-to-docs",
-      "link": "https://idea-to-docs.replit.app",
-      "linkLabel": "Try It Out"
+      "github": "https://github.com/vidyullathaks/idea-to-docs"
     },
     {
       "title": "Agentic AI Job Search Optimizer",
